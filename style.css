@@ -15,6 +15,10 @@ html{
     scroll-behavior: smooth;
 }
 
+link .web-icon href{
+    border-radius: 50%;
+}
+
 p{
     color: rgb(85, 85, 85);
 }
