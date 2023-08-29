@@ -375,6 +375,19 @@ section{
     height: 90%;
   }
   
+  .project-1-img {
+    border-radius: 2rem;
+    width: 100%;
+    height: 200%;
+    -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+  }
+
+  .project-1-img:hover {
+    cursor: pointer;
+    width: 90%;
+  }
+
   .project-title {
     margin: 1rem;
     color: black;
@@ -384,7 +397,7 @@ section{
     color: black;
     border-color: rgb(163, 163, 163);
   }
-  
+
   /* CONTACT */
   
   #contact {
