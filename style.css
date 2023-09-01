@@ -375,7 +375,7 @@ section{
     height: 90%;
   }
   
-  .project-1-img {
+  .project-rectangle-img {
     /* border-radius: 2rem; */
     width: 100%;
     height: 150px;
@@ -383,20 +383,7 @@ section{
 	  transition: .3s ease-in-out;
   }
 
-  .project-1-img:hover {
-    cursor: pointer;
-    width: 90%;
-  }
-
-  .project-2-img {
-    /* border-radius: 2rem; */
-    width: 100%;
-    height: 150px;
-    -webkit-transition: .3s ease-in-out;
-	  transition: .3s ease-in-out;
-  }
-
-  .project-2-img:hover {
+  .project-rectangle-img:hover {
     cursor: pointer;
     width: 90%;
   }
