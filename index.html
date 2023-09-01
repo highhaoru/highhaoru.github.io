@@ -261,17 +261,45 @@
             <h1 class="title">Projects</h1>
             <div class="experience-details-container">
               <!-- first row of projects -->
-              <div class="about-containers first row of projects">
+              <div class="about-containers">
                 <div class="details-container color-container">
-                  <div class="article-container">
+                  <div class="article-container manual-slideshow-container">
+                    <!-- Profile Page -->
                     <img
-                      src="./assets/Tuiter React App.png"
-                      alt="Project 1"
-                      class="project-rectangle-img"
-                      onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app'"
+                      class="project-rectangle-img mySlides"
+                      src="./assets/Tuiter React App Profile.png"
+                      alt="Project 1 Profile Page"
+                      onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/profile'"
                     />
+
+                    <!-- Home Page -->
+                    <img
+                      class="project-rectangle-img mySlides"
+                      src="./assets/Tuiter React App Home.png"
+                      alt="Project 1 Home Page"
+                      onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/home'"
+                    />
+
+                    <!-- Explore Page -->
+                    <img
+                      class="project-rectangle-img mySlides"
+                      src="./assets/Tuiter React App Explore.png"
+                      alt="Project 1 Home Page"
+                      onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/explore'"
+                    />
+
+                    <!-- Labs Page -->
+                    <img
+                      class="project-rectangle-img mySlides"
+                      src="./assets/Tuiter React App Labs.png"
+                      alt="Project 1 Home Page"
+                      onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/'"
+                    />
+
+                    <button class="prev" onclick="plusSlides(-1)">❮</button>
+                    <button class="next" onclick="plusSlides(1)">❯</button>
                   </div>
-                  <h2 class="experience-sub-title project-title">Tuiter React App</h2>
+                  <h2 class="experience-sub-title project-title">Tuiter React Node App</h2>
                   <div class="btn-container">
                     <button
                       class="btn btn-color-2 project-btn"
@@ -457,5 +485,6 @@
             <p>Copyright &#169; 2023 Hao Jin. All Rights Reserved.</p>
           </footer>
         <script src="script.js"></script>
+        <script src="slideshow.js"></script>
     </body>
 </html>

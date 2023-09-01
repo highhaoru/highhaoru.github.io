@@ -375,8 +375,9 @@ section{
     height: 90%;
   }
   
+  /* project 1 & 2 */
   .project-rectangle-img {
-    /* border-radius: 2rem; */
+    border-radius: 0.5rem;
     width: 100%;
     height: 150px;
     -webkit-transition: .3s ease-in-out;
@@ -386,6 +387,46 @@ section{
   .project-rectangle-img:hover {
     cursor: pointer;
     width: 95%;
+  }
+
+  /* project 1 slides */
+
+  .manual-slideshow-container {
+    position: relative;
+  }
+  
+  .mySlides {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 80%;
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgba(158, 151, 151, 0.5);  /* 半透明黑色背景 */
+    color: white;  /* 文字颜色 */
+    padding: 10px;  /* 内边距 */
+    border: none;  /* 去掉边框 */
+    border-radius: 50%;  /* 圆形按钮 */
+    font-size: 18px;  /* 字体大小 */
+  }
+  
+  .prev:hover, 
+  .next:hover {
+    background-color: white;  /* 更深的背景色 */
+    color: black;  /* 文字颜色变为黄色 */
+  }
+
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
   }
 
   .project-title {
