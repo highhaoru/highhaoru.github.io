@@ -1,17 +1,23 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, project) {
+  showSlides(slideIndexes[project] += n, project);
 }
 
-function showSlides(n) {
+const slideIndexes = {
+  'tuiter': 1,
+  'java': 1
+};
+
+function showSlides(n, project) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) { slideIndex = 1; }
-  if (n < 1) { slideIndex = slides.length; }
+  let slides = document.getElementsByClassName(`${project}-mySlides`);
+  if (n > slides.length) { slideIndexes[project] = 1; }
+  if (n < 1) { slideIndexes[project] = slides.length; }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndexes[project] - 1].style.display = "block";
 }
+
+// Initialize
+showSlides(slideIndexes['tuiter'], 'tuiter');
+showSlides(slideIndexes['java'], 'java');
