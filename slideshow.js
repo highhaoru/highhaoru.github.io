@@ -1,19 +1,24 @@
-// Slide indices for each project
+// Initialize the slide index for each project
 const slideIndexes = {
   'tuiter': 1,
   'java': 1
 };
 
-// Move slides by n positions
+// Function to move to next/previous slide
 function plusSlides(n, project) {
   showSlides(slideIndexes[project] += n, project);
 }
 
-// Show the current slide for a given project
+// Function to show the slide at a specific index
+function currentSlide(n, project) {
+  showSlides(slideIndexes[project] = n, project);
+}
+
+// Function to handle showing slides
 function showSlides(n, project) {
   let i;
-  let slides = document.getElementsByClassName(`${project}-mySlides`);
-  let dots = document.getElementsByClassName(`${project}-dot`);
+  const slides = document.getElementsByClassName(`${project}-mySlides`);
+  const dots = document.getElementsByClassName(`${project}-dot`);
   if (n > slides.length) { slideIndexes[project] = 1; }
   if (n < 1) { slideIndexes[project] = slides.length; }
   
@@ -21,19 +26,33 @@ function showSlides(n, project) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
+  
   // Remove "active" class from all dots
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   
-  // Show the current slide
+  // Show the current slide and set the dot as active
   slides[slideIndexes[project] - 1].style.display = "block";
-  
-  // Add "active" class to the current dot
   dots[slideIndexes[project] - 1].className += " active";
 }
 
-// Initialize the slides for each project
+// Initialize slides
 showSlides(slideIndexes['tuiter'], 'tuiter');
 showSlides(slideIndexes['java'], 'java');
+
+// Add click events to dots
+document.addEventListener("DOMContentLoaded", function() {
+  const projects = ['tuiter', 'java'];
+  
+  projects.forEach(project => {
+    const dots = document.querySelectorAll(`.${project}-dot`);
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", function() {
+        const n = parseInt(this.getAttribute("data-slide-to"));
+        currentSlide(n, project);
+      });
+    });
+  });
+});
