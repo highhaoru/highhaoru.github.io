@@ -45,7 +45,7 @@ showSlides(slideIndexes['gymUi'], 'gymUi');
 
 // Add click events to dots
 document.addEventListener("DOMContentLoaded", function() {
-  const projects = ['tuiter', 'java'];
+  const projects = ['tuiter', 'java', 'gymUi'];
   
   projects.forEach(project => {
     const dots = document.querySelectorAll(`.${project}-dot`);
