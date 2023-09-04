@@ -1,7 +1,8 @@
 // Initialize the slide index for each project
 const slideIndexes = {
   'tuiter': 1,
-  'java': 1
+  'java': 1,
+  'gymUi': 1
 };
 
 // Function to move to next/previous slide
@@ -40,6 +41,7 @@ function showSlides(n, project) {
 // Initialize slides
 showSlides(slideIndexes['tuiter'], 'tuiter');
 showSlides(slideIndexes['java'], 'java');
+showSlides(slideIndexes['gymUi'], 'gymUi');
 
 // Add click events to dots
 document.addEventListener("DOMContentLoaded", function() {

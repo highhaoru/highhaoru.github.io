@@ -223,6 +223,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    
   }
   
   .btn {
@@ -397,7 +398,8 @@ section{
   
   /* Slides General */
 .tuiter-mySlides,
-.java-mySlides {
+.java-mySlides,
+.gymUi-mySlides {
   display: none;
   width: 100%;
 }
@@ -468,6 +470,39 @@ section{
   right: 0;
 }
 
+/* GymUI Project */
+.gymUi-slides {
+  position: relative;
+}
+
+.gymUi-prev,
+.gymUi-next {
+  position: absolute;
+  top: 90%;
+  z-index: 1;
+  cursor: pointer;
+  background-color: lightgray;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+}
+
+.gymUi-prev:hover,
+.gymUi-next:hover {
+  background-color: white;
+  color: black;  
+}
+
+.gymUi-prev {
+  left: 0;
+}
+
+.gymUi-next {
+  right: 0;
+}
+/* end */
   .project-title {
     margin: 1rem;
     color: black;
@@ -520,10 +555,31 @@ section{
   cursor: pointer;
 }
 
+.gymUi-dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.gymUi-dot:hover{
+  cursor: pointer;
+  background-color: #717171;
+}
+
+.gymUi-dot.active {
+  background-color: #717171;
+}
+
+
 /* BUTTONS DOTS */
 
 .java-dots,
-.tuiter-dots{
+.tuiter-dots,
+.gymUi-dots{
   margin-top: -20px;
 }
 
@@ -534,6 +590,7 @@ section{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 1100px;
   }
   
   .contact-info-upper-container {
