@@ -408,7 +408,7 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1rem;
     justify-content: space-around;
   }
   
@@ -418,7 +418,27 @@ section{
     justify-content: space-around;
     gap: 0.5rem;
   }
+
+  article h3{
+    font-size: 1rem;
+  }
+
+  article p{
+    font-size: 0.5rem;
+  }
   
+  article img{
+    margin-right: -30px;
+    padding-right: 20px;
+    width: 30px;
+  }
+
+  article .HTMLCSS{
+    margin-right: -40px;
+    margin-left: -10px;
+    width: 20px;
+  }
+
   article .icon {
     cursor: default;
   }
