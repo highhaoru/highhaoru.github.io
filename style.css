@@ -44,7 +44,7 @@ nav{
 }
 
 a{
-    color: black;
+    color: rgb(53, 53, 53);
     text-decoration: none;
     text-decoration-color: white;
 }
@@ -86,7 +86,7 @@ a:hover{
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
     transition: all 0.3 ease-in-out;
 }
 
@@ -106,7 +106,7 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: rgb(53, 53, 53);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -211,7 +211,7 @@ section{
   line-height: 40px;
   text-align: center;
   color:#ffffff;
-  background-color: black;
+  background-color: rgb(53, 53, 53);
   text-decoration: none;	
   display: inline-block;
   margin-right: 10px;
@@ -223,19 +223,19 @@ section{
 #socials-container a:hover{
   background-color: white;
   color: #c11325;
-  border:0px solid black;
+  border:0px solid rgb(53, 53, 53);
 }
 
 #socials-container .git:hover{
   background-color: white;
-  color: black;
-  border:0px solid black;
+  color: rgb(53, 53, 53);
+  border:0px solid rgb(53, 53, 53);
 }
 
 #socials-container .linkedin:hover{
   background-color: white;
   color: rgb(65, 39, 237);
-  border:0px solid black;
+  border:0px solid rgb(53, 53, 53);
 }
 
 .logo_img{
@@ -316,7 +316,7 @@ section{
   .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 0;
   }
   
   .about-details-container {
@@ -327,6 +327,7 @@ section{
   .about-containers,
   .about-details-container {
     display: flex;
+    /* padding-bottom: 20px; */
   }
   
   .about-pic {
@@ -348,10 +349,17 @@ section{
     border-color: rgb(163, 163, 163);
     text-align: center;
   }
+
+  .details-container span{
+    font-weight: bolder;
+    color: rgb(53, 53, 53);
+  }
   
   .section-container {
     gap: 4rem;
     height: 80%;
+    display: inline-flex;
+    align-items: flex-start;  /* 从顶部对齐 */
   }
   
   .section__pic-container {
@@ -359,6 +367,22 @@ section{
     width: 400px;
     margin: auto 0;
   }
+
+  .text-container {
+    align-self: center;
+    text-align: center; 
+    align-items: flex-start;
+    margin-top: -20px;
+  }
+
+  /* .section__pic-container, .about-details-container {
+    margin: 0;  
+    padding: 0; 
+} */
+
+/* .about-pic, .icon {
+    display: block;  防止图片下方留有空隙
+} */
   
   /* EXPERIENCE SECTION */
   
@@ -466,7 +490,7 @@ section{
 .tuiter-prev:hover,
 .tuiter-next:hover {
   background-color: white;
-  color: black;  
+  color: rgb(53, 53, 53);  
 }
 
 .tuiter-prev {
@@ -499,7 +523,7 @@ section{
 .java-prev:hover,
 .java-next:hover {
   background-color: white;
-  color: black;  
+  color: rgb(53, 53, 53);  
 }
 
 .java-prev {
@@ -532,7 +556,7 @@ section{
 .gymUi-prev:hover,
 .gymUi-next:hover {
   background-color: white;
-  color: black;  
+  color: rgb(53, 53, 53);  
 }
 
 .gymUi-prev {
@@ -545,11 +569,11 @@ section{
 /* end */
   .project-title {
     margin: 1rem;
-    color: black;
+    color: rgb(53, 53, 53);
   }
   
   .project-btn {
-    color: black;
+    color: rgb(53, 53, 53);
     border-color: rgb(163, 163, 163);
   }
 
@@ -654,7 +678,7 @@ section{
     line-height: 40px;
     text-align: center;
     color:#ffffff;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
     text-decoration: none;	
     display: inline-block;
     margin-right: 10px;
@@ -666,19 +690,19 @@ section{
   .contact-info-upper-container a:hover{
     background-color: white;
     color: #c11325;
-    border:0px solid black;
+    border:0px solid rgb(53, 53, 53);
   }
 
   .contact-info-upper-container .git:hover{
     background-color: white;
-    color: black;
-    border:0px solid black;
+    color: rgb(53, 53, 53);
+    border:0px solid rgb(53, 53, 53);
   }
 
   .contact-info-upper-container .linkedin:hover{
     background-color: white;
     color: rgb(65, 39, 237);
-    border:0px solid black;
+    border:0px solid rgb(53, 53, 53);
   }
 
   .contact-info-container {
