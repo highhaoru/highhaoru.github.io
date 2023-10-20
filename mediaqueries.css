@@ -19,6 +19,7 @@
     #hamburger-nav {
       display: flex;
     }
+    #publication,
     #experience,
     .experience-details-container {
       margin-top: 2rem;

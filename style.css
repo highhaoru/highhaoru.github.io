@@ -197,6 +197,26 @@ section{
     text-align: center;
 }
 
+#publication a{
+  color:rgb(181, 8, 8);
+  font-size: larger;
+}
+
+#publication a:hover{
+  color: rgb(53, 53, 53);
+  text-underline-offset: 0rem;
+  text-decoration: underline;
+}
+
+#publication .bold-text {
+  font-weight: bold;
+  margin-left: 0;
+  padding-right: 0%;
+  
+}
+
+
+
 #socials-container{
     display: flex;
     justify-content: center;
@@ -373,6 +393,11 @@ section{
     text-align: center; 
     align-items: flex-start;
     margin-top: -20px;
+  }
+
+  .text-container span{
+    font-weight: bolder;
+    color: rgb(53, 53, 53);
   }
 
   /* .section__pic-container, .about-details-container {
