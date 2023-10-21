@@ -19,15 +19,22 @@
     #hamburger-nav {
       display: flex;
     }
+
     #publication,
     #experience,
     .experience-details-container {
       margin-top: 2rem;
     }
+
     #profile,
     .section-container {
       display: block;
     }
+
+    .section-container {
+      flex-direction: column;  /* 将 divs 堆叠起来 */
+    }
+
     .arrow {
       display: none;
     }
@@ -102,3 +109,35 @@
       text-align: justify;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    /* 调整整体字体大小 */
+    body {
+        font-size: 14px;
+    }
+
+    /* 如果你有一个大的标题，你可能想要减小它的大小 */
+    .title {
+        font-size: 24px;  /* 只是一个示例，根据实际需求调整 */
+    }
+
+    /* 调整间距和填充 */
+    .some-element {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    /* 如果你有一个导航菜单，可能需要调整或隐藏某些元素 */
+    .nav-item {
+        display: block;   /* 变为块级元素，使其占满整行 */
+        margin: 5px 0;   /* 添加上下边距 */
+    }
+
+    /* 如果你的页面有图片，可能需要调整它们的大小 */
+    .some-image {
+        width: 100%;   /* 使图片宽度适应其容器 */
+        height: auto;  /* 保持图片的原始纵横比 */
+    }
+
+    /* 其他需要调整的样式... */
+}

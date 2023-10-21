@@ -155,7 +155,19 @@ section{
 
 .section-container{
     display: flex;
+    align-items: flex-start;
 }
+
+.section__pic-container,
+.about-details-container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.about-pic {
+  vertical-align: top;
+}
+
 
 /* PROFILE SECTION */
 
@@ -168,7 +180,7 @@ section{
 }
 
 .section__pic-container{
-    display:flex;
+    display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -331,6 +343,7 @@ section{
   
   #about {
     position: relative;
+    display: inline-block;
   }
   
   .about-containers {
