@@ -447,6 +447,7 @@ section{
   
   #projects {
     position: relative;
+    height:250vh;
   }
   
   .color-container {
@@ -744,8 +745,9 @@ section{
 
  /* SKILL SECTION */
   
- #skill {
+ #skills {
   position: relative;
+  height: 100vh;
 }
 
 .skills-sub-title {
@@ -816,7 +818,7 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 20vh;
     margin-top: 50px;
   }
   
