@@ -209,26 +209,6 @@ section{
     text-align: center;
 }
 
-#publication a{
-  color:rgb(181, 8, 8);
-  font-size: larger;
-}
-
-#publication a:hover{
-  color: rgb(53, 53, 53);
-  text-underline-offset: 0rem;
-  text-decoration: underline;
-}
-
-#publication .bold-text {
-  font-weight: bold;
-  margin-left: 0;
-  padding-right: 0%;
-  
-}
-
-
-
 #socials-container{
     display: flex;
     justify-content: center;
@@ -296,7 +276,7 @@ section{
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: 10rem;
     border-radius: 2rem;
   }
   
@@ -344,6 +324,7 @@ section{
   #about {
     position: relative;
     display: inline-block;
+    height:76vh;
   }
   
   .about-containers {
@@ -413,74 +394,55 @@ section{
     color: rgb(53, 53, 53);
   }
 
-  /* .section__pic-container, .about-details-container {
+  .section__pic-container, .about-details-container {
     margin: 0;  
     padding: 0; 
-} */
+}
 
-/* .about-pic, .icon {
-    display: block;  防止图片下方留有空隙
-} */
+.about-pic, .icon {
+    display: block;  /* 防止图片下方留有空隙 */
+}
   
-  /* EXPERIENCE SECTION */
-  
-  #experience {
-    position: relative;
+  /* PUBLICATION SECTION */
+  #publication{
+    height: 35vh;
   }
   
-  .experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
+  #publication a{
+    color:rgb(181, 8, 8);
+    font-size: larger;
   }
   
-  .experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  #publication a:hover{
+    color: rgb(53, 53, 53);
+    text-underline-offset: 0rem;
+    text-decoration: underline;
   }
   
-  .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: space-around;
-  }
-  
-  article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+  #publication .bold-text {
+    font-weight: bold;
+    margin-left: 0;
+    padding-right: 0%;
+    
   }
 
-  article h3{
-    font-size: 1rem;
-  }
-
-  article p{
-    font-size: 0.5rem;
-  }
+  .publication-containers {
+    gap: 2rem;
+    /* margin-bottom: -20rem;
+    margin-top: 5rem; */
   
-  article img{
-    margin-right: -30px;
-    padding-right: 20px;
-    width: 30px;
   }
 
-  article .HTMLCSS{
-    margin-right: -40px;
-    margin-left: -10px;
-    width: 20px;
+  .publication-details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
   }
 
-  article .icon {
-    cursor: default;
-  }
-  
   /* PROJECTS SECTION */
   
   #projects {
@@ -635,6 +597,89 @@ section{
     border-color: rgb(163, 163, 163);
   }
 
+  .btn-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .btn:hover .fa-github {
+    color:white;
+  }
+
+  /* .fa-github:hover {
+    color: white;
+  } */
+
+  .fa-youtube, .fa-github {
+    font-size: 24px;
+}
+
+.live-demo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.live-demo-btn:hover .fa-youtube {
+    color: red;
+}
+
+
+
+
+  /* .live-demo {
+    width: 6rem;
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 50%;
+    color: #c11325;
+
+
+
+
+
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    
+    padding: 0.5rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    color: rgb(53, 53, 53);
+    border-color: rgb(163, 163, 163);
+    
+    line-height: 40px;
+    
+    color:#ffffff;
+    background-color: rgb(53, 53, 53);
+    text-decoration: none;	
+    
+    margin-right: 10px;
+    transition: all .5s ease;
+    border:0px solid transparent;
+   
+  }
+
+  .live-demo:hover {
+    background-color: white;
+    color: #c11325;
+    border:0px solid rgb(53, 53, 53);
+  } */
+
+  .project-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    height: 1.5rem;
+  }
+
   /* DOTS */
   /* Tuiter Dots */
 .tuiter-dot {
@@ -694,6 +739,66 @@ section{
 
 .gymUi-dot.active {
   background-color: #717171;
+}
+
+
+ /* SKILL SECTION */
+  
+ #skill {
+  position: relative;
+}
+
+.skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article h3{
+  font-size: 1rem;
+}
+
+article p{
+  font-size: 0.5rem;
+}
+
+article img{
+  margin-right: -30px;
+  padding-right: 20px;
+  width: 30px;
+}
+
+article .htmlcss{
+  margin-right: -40px;
+  margin-left: -10px;
+  width: 20px;
+}
+
+article .icon {
+  cursor: default;
 }
 
 
