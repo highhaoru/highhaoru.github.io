@@ -199,6 +199,14 @@ section{
     text-align: center;
 }
 
+.paper-title-note{
+    /* font-size: 1.5rem;
+    
+    margin-bottom: 1rem; */
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
 .section__text__p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -411,6 +419,7 @@ section{
   #publication a{
     color:rgb(181, 8, 8);
     font-size: larger;
+    text-decoration: underline;
   }
   
   #publication a:hover{
