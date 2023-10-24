@@ -756,7 +756,7 @@ section{
   
  #skills {
   position: relative;
-  height: 100vh;
+  height: 120vh;
 }
 
 .skills-sub-title {
@@ -812,6 +812,21 @@ article .icon {
   cursor: default;
 }
 
+.jupyter {
+  margin-right: 0px;
+  margin-left: 13px;
+  width: 30px;
+}
+
+.eclipse {
+  margin-right: -25px;
+  margin-left: 0px;
+  width: 40px;
+}
+
+.netbeans-container {
+  align-self: center;
+}
 
 /* BUTTONS DOTS */
 
