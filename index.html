@@ -1,291 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hao's Home</title>
-        <!-- favicon maker website: https://www.favicon.cc/ -->
-        <!-- <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" /> -->
-        <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
-        <link rel="stylesheet" href="../styles/style.css" />
-        <link rel="stylesheet" href="../styles/mediaQueries.css" />
-        <script src="https://kit.fontawesome.com/bda43205a7.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav id="desktop-nav">
-            <div class="logo">Hao Jin</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#publication">Publication</a></li>
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <nav id="hamburger-nav">
-            <div class="logo">Hao Jin</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
-                    <li><a href="#music" onclick="toggleMenu()">Music</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao's Home</title>
+    <!-- favicon maker website: https://www.favicon.cc/ -->
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/mediaQueries.css"/>
+    <link rel="stylesheet" href="styles/animationBorder.css"/>
+    <link rel="stylesheet" href="styles/tunnel.css"/>
+    <script src="https://kit.fontawesome.com/bda43205a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Hao Jin</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><div class="box"><a href="#music">Music</a></div></li>
+            <!--<li><a href="#music">Music</a></li>-->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-        <section id="profile">
-            <div class="section_pic-container">
-                <img class="logo_img" src="../assets/resume%20photo.jpg" alt="Hao Jin profile picture">
-            </div>
-            <div class="section__text">
-                <p class="section__text">Hello, I'm</p>
-                <h1 class="title">Hao Jin</h1>
-                <p class="section__text__p2">Research Assistant</p>
-                <p class="section__text__p2">Software Engineer</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/Hao Jin Resume.pdf')">
-                      <!-- https://www.overleaf.com/read/bbyjfdxkcsry   -->
-                      Download CV
-                    </button>
-                </div>
-                <div class="btn-container">
-                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                        Contact Info
-                    </button> -->
-                    <button class="btn btn-color-1" onclick="window.open('./assets/Hao Jin Resume.pdf')">
-                      <!-- https://www.overleaf.com/read/bbyjfdxkcsry   -->
-                      Download Resume
-                    </button>
-                </div>
-                <div id="socials-container">
-                  <a class="git" href="https://github.com/highhaoru"><span class="fa fa-github"></span></a>
-                  <a href="mailto:jin.ha@northeastern.edu"><span class="fa fa-envelope"></span></a>
-                  <a class="linkedin" href="https://www.linkedin.com/in/hao-jin-love-programming/"><span class="fa fa-linkedin"></span></a>
-                  <a href="https://github.com/highhaoru"><span class="fa fa-youtube-play"></span></a>
-                    <!-- <img src="./assets/linkedin.png" 
-                    alt="My LinkedIn profile" 
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/hao-jin-love-programming/'"
-                    />
-                    <img src="./assets/github.png" 
-                    alt="My Github profile" 
-                    class="icon" 
-                    onclick="location.href='https://github.com/'"
-                    /> -->
-                </div>
-            </div>
-        </section>
+<nav id="hamburger-nav">
+    <div class="logo">Hao Jin</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+                <li class="menu-music-li"><div class="box"><a href="#music" onclick="toggleMenu()">Music</a></div></li>
+                <!--<li><a href="#music" onclick="toggleMenu()">Music</a></li>-->
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
 
-        <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
+        </div>
+    </div>
+</nav>
 
-              <div class="section__pic-container">
-                <img
-                  src="../assets/selfie.jpg"
-                  alt="Profile picture"
-                  class="about-pic"
-                />
-              </div>
+<section id="profile">
+    <div class="section_pic-container">
+        <img class="logo_img" src="assets/resume%20photo.jpg" alt="Hao Jin profile picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text">Hello, I'm</p>
+        <h1 class="title">Hao Jin</h1>
+        <p class="section__text__p2">Research Assistant</p>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Hao Jin Resume.pdf')">
+                <!-- https://www.overleaf.com/read/bbyjfdxkcsry   -->
+                Download CV
+            </button>
+        </div>
+        <div class="btn-container">
+            <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button> -->
+            <button class="btn btn-color-1" onclick="window.open('./assets/Hao Jin Resume.pdf')">
+                <!-- https://www.overleaf.com/read/bbyjfdxkcsry   -->
+                Download Resume
+            </button>
+        </div>
+        <div id="socials-container">
+            <a class="git" href="https://github.com/highhaoru"><span
+                    class="fa fa-github"></span></a>
+            <a href="mailto:jin.ha@northeastern.edu"><span class="fa fa-envelope"></span></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/hao-jin-love-programming/"><span
+                    class="fa fa-linkedin"></span></a>
+            <a href="https://github.com/highhaoru"><span class="fa fa-youtube-play"></span></a>
+            <!-- <img src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hao-jin-love-programming/'"
+            />
+            <img src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+            /> -->
+        </div>
+    </div>
+</section>
 
-              <div class="about-details-container">
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
 
-                <div class="about-containers">
+        <div class="section__pic-container">
+            <img
+                    src="assets/selfie.jpg"
+                    alt="Profile picture"
+                    class="about-pic"
+            />
+        </div>
 
-                  <div class="details-container">
+        <div class="about-details-container">
+
+            <div class="about-containers">
+
+                <div class="details-container">
                     <img
-                      src="../assets/experience.png"
-                      alt="Experience icon"
-                      class="icon"
+                            src="assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
                     />
                     <h3>Experience</h3>
                     <p> 1 year <br><span>SWE</span></p>
                     <p> 10 months <br><span>RA</span></p>
-                  </div>
+                </div>
 
-                  <div class="details-container">
+                <div class="details-container">
                     <img
-                      src="../assets/education.png"
-                      alt="Education icon"
-                      class="icon"
+                            src="assets/education.png"
+                            alt="Education icon"
+                            class="icon"
                     />
                     <h3>Education</h3>
-                    <p>B.S in <span>Information Technology</span><br/> M.S in <span>Computer Science</span> </p>
-                  </div>
-
+                    <p>B.S in <span>Information Technology</span><br/> M.S in
+                        <span>Computer Science</span></p>
                 </div>
 
-                <div class="text-container">
-                  <span></span>
-                  <p>
-                    Hello, I'm <span>Hao Jin</span> with a year of experience as a <span>Software Engineer</span> 
-                    and nearly a year as a <span>RA</span>. 
+            </div>
+
+            <div class="text-container">
+                <span></span>
+                <p>
+                    Hello, I'm <span>Hao Jin</span> with a year of experience as a <span>Software Engineer</span>
+                    and nearly a year as a <span>RA</span>.
                     <br/>
-                    With strong technical skills and a passion for technology, 
+                    With strong technical skills and a passion for technology,
                     I've excelled in various projects and tackled complex challenges.
                     <br/>
-                    I look forward to discussing how I can contribute my skills and experience to your team.
-                  </p>
-                </div>
-
-              </div>
-              <img
-              src="../assets/arrow.png"
-              alt="Arrow icon"
-              class="icon arrow"
-              onclick="location.href='./#publication'"
-              />  
+                    I look forward to discussing how I can contribute my skills and experience to
+                    your team.
+                </p>
             </div>
-          </section>
-          <br><br>
 
-        <section id="publication">
-          <p class="section__text__p1">Here is My</p>
-          <h1 class="title">Publication</h1>
-          <div class="publication-containers">
-            <a class="paper-title" href="https://drive.google.com/file/d/1ZinqJpU5LZ0WCF20ca1ktiBWVJVoxIo8/view?usp=share_link"><span class="bold-text">Computer-Human Interactions (CHI) | 2024</span><span class="paper-title-note">(Under Review)</span></a><br>
-            <br> 
-            <a class="paper" href="https://drive.google.com/file/d/1UAdhD84toxwCMBkDd8W_w9FJ0x4YM7I7/view?usp=share_link">
-              Polly Talks About the Weather: Toward Evaluating the Expressive and Enrichment Potential 
-              of a Tablet-Based Speech Board in a single Goffin’s Cockatoo</a>
-          </div>
-          
-            
-          </section>
+        </div>
+<!--        <img-->
+<!--                src="assets/arrow.png"-->
+<!--                alt="Arrow icon"-->
+<!--                class="icon arrow"-->
+<!--                onclick="location.href='./#publication'"-->
+<!--        />-->
+    </div>
+</section>
+<br><br>
 
-        <section id="projects">
-          <!-- third row of projects -->
-          <p class="section__text__p1">Browse My</p>
-          <h1 class="title">AI & Machine Learning Projects</h1>
-          <div class="about-containers">
+<section id="publication">
+    <p class="section__text__p1">Here is My</p>
+    <h1 class="title">Publication</h1>
+    <div class="publication-containers">
+        <a class="paper-title"
+           href="https://drive.google.com/file/d/1ZinqJpU5LZ0WCF20ca1ktiBWVJVoxIo8/view?usp=share_link"><span
+                class="bold-text">Computer-Human Interactions (CHI) | 2024</span><span
+                class="paper-title-note">(Under Review)</span></a><br>
+        <br>
+        <a class="paper"
+           href="https://drive.google.com/file/d/1UAdhD84toxwCMBkDd8W_w9FJ0x4YM7I7/view?usp=share_link">
+            Polly Talks About the Weather: Toward Evaluating the Expressive and Enrichment Potential
+            of a Tablet-Based Speech Board in a single Goffin’s Cockatoo</a>
+    </div>
+</section>
 
-            <div class="details-container color-container">
-              <div class="article-container">
+<section id="music">
+    <p class="section__text__p1">Get in</p>
+    <h1 class="title">The Portal!</h1>
+    <!--<div class="box"></div>-->
+    <div class="tunnel"></div>
+    <div class="portal">
+        <div class="swirl"></div>
+    </div>
+
+</section>
+
+<section id="projects">
+    <!-- third row of projects -->
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">AI & Machine Learning Projects</h1>
+    <div class="about-containers">
+
+        <div class="details-container color-container">
+            <div class="article-container">
                 <img
-                        src="../assets/project-1.png"
+                        src="assets/project-1.png"
                         alt="Project 1"
                         class="project-img"
                 />
-              </div>
-              <h2 class="skills-sub-title project-title">Tuiter App</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-                <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                <div class="btn-icons">
-                  <span class="fa fa-github"></span>
-                  <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                </div>
-                
-                </button>
-
-                <button
-                  class="btn btn-color-2 project-btn live-demo-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-
-                <span class="fa fa-youtube"></span>
-
-                </button>
-              </div>
             </div>
+            <h2 class="skills-sub-title project-title">Tuiter App</h2>
+            <div class="btn-container">
+                <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+                    <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                    <div class="btn-icons">
+                        <span class="fa fa-github"></span>
+                        <img class="project-icon" alt="intellij"
+                             src="assets/IntelliJ_IDEA_Icon.svg"/>
+                    </div>
 
-            <div class="details-container color-container">
-              <div class="article-container">
+                </button>
+
+                <button
+                        class="btn btn-color-2 project-btn live-demo-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+
+                    <span class="fa fa-youtube"></span>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="details-container color-container">
+            <div class="article-container">
                 <img
-                        src="../assets/project-2.png"
+                        src="assets/project-2.png"
                         alt="Project 2"
                         class="project-img"
                 />
-              </div>
-              <h2 class="skills-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-                <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                <div class="btn-icons">
-                  <span class="fa fa-github"></span>
-                  <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                </div>
-                
-                </button>
-
-                <button
-                  class="btn btn-color-2 project-btn live-demo-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-
-                <span class="fa fa-youtube"></span>
-
-                </button>
-              </div>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
+            <h2 class="skills-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+                <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+                    <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                    <div class="btn-icons">
+                        <span class="fa fa-github"></span>
+                        <img class="project-icon" alt="intellij"
+                             src="assets/IntelliJ_IDEA_Icon.svg"/>
+                    </div>
+
+                </button>
+
+                <button
+                        class="btn btn-color-2 project-btn live-demo-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+
+                    <span class="fa fa-youtube"></span>
+
+                </button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
                 <img
-                        src="../assets/project-3.png"
+                        src="assets/project-3.png"
                         alt="Project 3"
                         class="project-img"
                 />
-              </div>
-              <h2 class="skills-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-                <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                <div class="btn-icons">
-                  <span class="fa fa-github"></span>
-                  <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                </div>
-                
-                </button>
-
-                <button
-                  class="btn btn-color-2 project-btn live-demo-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-
-                <span class="fa fa-youtube"></span>
-
-                </button>
-              </div>
             </div>
+            <h2 class="skills-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+                <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+                    <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                    <div class="btn-icons">
+                        <span class="fa fa-github"></span>
+                        <img class="project-icon" alt="intellij"
+                             src="assets/IntelliJ_IDEA_Icon.svg"/>
+                    </div>
 
-          </div>
+                </button>
 
-          <!-- third row of projects -->
-          <p class="section__text__p1">Browse My</p>
-          <h1 class="title">Working Projects</h1>
-          <div class="about-containers">
+                <button
+                        class="btn btn-color-2 project-btn live-demo-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
 
-            <!--working project 1-->
-            <!-- Gym Web UI Design -->
-            <div class="details-container color-container">
-              <div class="article-container manual-slideshow-container gymUi-slides">
+                    <span class="fa fa-youtube"></span>
+
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- third row of projects -->
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Working Projects</h1>
+    <div class="about-containers">
+
+        <!--working project 1-->
+        <!-- Gym Web UI Design -->
+        <div class="details-container color-container">
+            <div class="article-container manual-slideshow-container gymUi-slides">
                 <!-- Home Page -->
                 <img
                         class="project-rectangle-img gymUi-mySlides"
-                        src="../assets/UI%20Web%201.png"
+                        src="assets/UI%20Web%201.png"
                         alt="Working Project 1 Home Page"
                         onclick="location.href='https://haojin-fitness.netlify.app/'"
                 />
@@ -293,7 +320,7 @@
                 <!-- Personal Training Page -->
                 <img
                         class="project-rectangle-img gymUi-mySlides"
-                        src="../assets/UI%20Web%202.png"
+                        src="assets/UI%20Web%202.png"
                         alt="Working Project 1 Personal Training Page"
                         onclick="location.href='https://haojin-fitness.netlify.app/pages/personaltraining'"
                 />
@@ -301,7 +328,7 @@
                 <!-- Group Class Page -->
                 <img
                         class="project-rectangle-img gymUi-mySlides"
-                        src="../assets/UI%20Web%203.png"
+                        src="assets/UI%20Web%203.png"
                         alt="Working Project 1 Group Class Page"
                         onclick="location.href='https://haojin-fitness.netlify.app/pages/groupclass'"
                 />
@@ -309,7 +336,7 @@
                 <!-- Sign Up Page -->
                 <img
                         class="project-rectangle-img gymUi-mySlides"
-                        src="../assets/UI%20Web%204.png"
+                        src="assets/UI%20Web%204.png"
                         alt="Working Project 1 Sign Up Page"
                         onclick="location.href='https://haojin-fitness.netlify.app/pages/signup'"
                 />
@@ -318,817 +345,863 @@
                 <button class="gymUi-next" onclick="plusSlides(1, 'gymUi')">❯</button>
 
                 <div class="gymUi-dots">
-                  <span class="gymUi-dot" data-slide-to="1"></span>
-                  <span class="gymUi-dot" data-slide-to="2"></span>
-                  <span class="gymUi-dot" data-slide-to="3"></span>
-                  <span class="gymUi-dot" data-slide-to="4"></span>
+                    <span class="gymUi-dot" data-slide-to="1"></span>
+                    <span class="gymUi-dot" data-slide-to="2"></span>
+                    <span class="gymUi-dot" data-slide-to="3"></span>
+                    <span class="gymUi-dot" data-slide-to="4"></span>
                 </div>
-              </div>
-              <h2 class="skills-sub-title project-title">Gym UI/UX Design</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-                <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                <div class="btn-icons">
-                  <span class="fa fa-github"></span>
-                  <img class="project-icon" alt="vscode" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-                  <img class="project-icon" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> 
-                  <img class="project-icon" alt="materialUi" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
-                </div>
-                
-                </button>
-
-                <button
-                  class="btn btn-color-2 project-btn live-demo-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-
-                <span class="fa fa-youtube"></span>
-
-                </button>
-              </div>
             </div>
+            <h2 class="skills-sub-title project-title">Gym UI/UX Design</h2>
+            <div class="btn-container">
+                <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+                    <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                    <div class="btn-icons">
+                        <span class="fa fa-github"></span>
+                        <img class="project-icon" alt="vscode"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+                        <img class="project-icon" alt="React"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                        <img class="project-icon" alt="materialUi"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"/>
+                    </div>
 
-            <div class="details-container color-container">
-              <div class="article-container">
+                </button>
+
+                <button
+                        class="btn btn-color-2 project-btn live-demo-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+
+                    <span class="fa fa-youtube"></span>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="details-container color-container">
+            <div class="article-container">
                 <img
-                        src="../assets/project-2.png"
+                        src="assets/project-2.png"
                         alt="Project 2"
                         class="project-img"
                 />
-              </div>
-              <h2 class="skills-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-                <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                <div class="btn-icons">
-                  <span class="fa fa-github"></span>
-                  <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                </div>
-                
-                </button>
-
-                <button
-                  class="btn btn-color-2 project-btn live-demo-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-
-                <span class="fa fa-youtube"></span>
-
-                </button>
-              </div>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
+            <h2 class="skills-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+                <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+                    <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                    <div class="btn-icons">
+                        <span class="fa fa-github"></span>
+                        <img class="project-icon" alt="intellij"
+                             src="assets/IntelliJ_IDEA_Icon.svg"/>
+                    </div>
+
+                </button>
+
+                <button
+                        class="btn btn-color-2 project-btn live-demo-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+
+                    <span class="fa fa-youtube"></span>
+
+                </button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
                 <img
-                        src="../assets/project-3.png"
+                        src="assets/project-3.png"
                         alt="Project 3"
                         class="project-img"
                 />
-              </div>
-              <h2 class="skills-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-                <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                <div class="btn-icons">
-                  <span class="fa fa-github"></span>
-                  <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                </div>
-                
-                </button>
-
-                <button
-                  class="btn btn-color-2 project-btn live-demo-btn"
-                  onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                >
-
-                <span class="fa fa-youtube"></span>
-
-                </button>
-              </div>
             </div>
+            <h2 class="skills-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+                <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
+                    <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                    <div class="btn-icons">
+                        <span class="fa fa-github"></span>
+                        <img class="project-icon" alt="intellij"
+                             src="assets/IntelliJ_IDEA_Icon.svg"/>
+                    </div>
 
-          </div>
+                </button>
 
-          <p class="section__text__p1">Browse My Recent</p>
-          <h1 class="title">Academic Projects</h1>
-          <div class="skills-details-container">
-            <!-- first row of projects -->
-            <div class="about-containers">
+                <button
+                        class="btn btn-color-2 project-btn live-demo-btn"
+                        onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                >
 
-              <!--project 1-->
-              <div class="details-container color-container">
+                    <span class="fa fa-youtube"></span>
+
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Academic Projects</h1>
+    <div class="skills-details-container">
+        <!-- first row of projects -->
+        <div class="about-containers">
+
+            <!--project 1-->
+            <div class="details-container color-container">
                 <div class="article-container manual-slideshow-container tuiter-slides">
-                  <!-- Profile Page -->
-                  <img
-                    class="project-rectangle-img tuiter-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Profile.png"
-                    alt="Project 1 Profile Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/profile'"
-                  />
+                    <!-- Profile Page -->
+                    <img
+                            class="project-rectangle-img tuiter-mySlides"
+                            src="assets/Tuiter%20React%20App%20Profile.png"
+                            alt="Project 1 Profile Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/profile'"
+                    />
 
-                  <!-- Home Page -->
-                  <img
-                    class="project-rectangle-img tuiter-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Home.png"
-                    alt="Project 1 Home Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/home'"
-                  />
+                    <!-- Home Page -->
+                    <img
+                            class="project-rectangle-img tuiter-mySlides"
+                            src="assets/Tuiter%20React%20App%20Home.png"
+                            alt="Project 1 Home Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/home'"
+                    />
 
-                  <!-- Explore Page -->
-                  <img
-                    class="project-rectangle-img tuiter-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Explore.png"
-                    alt="Project 1 Home Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/explore'"
-                  />
+                    <!-- Explore Page -->
+                    <img
+                            class="project-rectangle-img tuiter-mySlides"
+                            src="assets/Tuiter%20React%20App%20Explore.png"
+                            alt="Project 1 Home Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/explore'"
+                    />
 
-                  <!-- Labs Page -->
-                  <img
-                    class="project-rectangle-img tuiter-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Labs.png"
-                    alt="Project 1 Home Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/'"
-                  />
+                    <!-- Labs Page -->
+                    <img
+                            class="project-rectangle-img tuiter-mySlides"
+                            src="assets/Tuiter%20React%20App%20Labs.png"
+                            alt="Project 1 Home Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/'"
+                    />
 
-                  <button class="tuiter-prev" onclick="plusSlides(-1, 'tuiter')">❮</button>
-                  <button class="tuiter-next" onclick="plusSlides(1, 'tuiter')">❯</button>
+                    <button class="tuiter-prev" onclick="plusSlides(-1, 'tuiter')">❮</button>
+                    <button class="tuiter-next" onclick="plusSlides(1, 'tuiter')">❯</button>
 
-                  <div class="tuiter-dots">
-                    <span class="tuiter-dot" data-slide-to="1"></span>
-                    <span class="tuiter-dot" data-slide-to="2"></span>
-                    <span class="tuiter-dot" data-slide-to="3"></span>
-                    <span class="tuiter-dot" data-slide-to="4"></span>
-                  </div>
+                    <div class="tuiter-dots">
+                        <span class="tuiter-dot" data-slide-to="1"></span>
+                        <span class="tuiter-dot" data-slide-to="2"></span>
+                        <span class="tuiter-dot" data-slide-to="3"></span>
+                        <span class="tuiter-dot" data-slide-to="4"></span>
+                    </div>
                 </div>
                 <h2 class="skills-sub-title project-title">Tuiter App</h2>
                 <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-                  <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                  <div class="btn-icons">
-                    <span class="fa fa-github"></span>
-                    <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                    <img class="project-icon" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> 
-                    <img class="project-icon" alt="Node" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                  </div>
-                  
-                  </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+                        <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                        <div class="btn-icons">
+                            <span class="fa fa-github"></span>
+                            <img class="project-icon" alt="intellij"
+                                 src="assets/IntelliJ_IDEA_Icon.svg"/>
+                            <img class="project-icon" alt="React"
+                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                            <img class="project-icon" alt="Node"
+                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+                        </div>
 
-                  <button
-                    class="btn btn-color-2 project-btn live-demo-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
+                    </button>
 
-                  <span class="fa fa-youtube"></span>
+                    <button
+                            class="btn btn-color-2 project-btn live-demo-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
 
-                  </button>
+                        <span class="fa fa-youtube"></span>
+
+                    </button>
                 </div>
-              </div>
+            </div>
 
-              <!--project 2-->
-              <div class="details-container color-container">
+            <!--project 2-->
+            <div class="details-container color-container">
                 <div class="article-container manual-slideshow-container java-slides">
-                  <!-- Profile Page -->
-                  <img
-                    class="project-rectangle-img java-mySlides"
-                    src="../assets/mvc.png"
-                    alt="Project 2"
-                    onclick="location.href='https://github.com/highhaoru/Java-Swing-MVC'"
-                  />
+                    <!-- Profile Page -->
+                    <img
+                            class="project-rectangle-img java-mySlides"
+                            src="assets/mvc.png"
+                            alt="Project 2"
+                            onclick="location.href='https://github.com/highhaoru/Java-Swing-MVC'"
+                    />
 
-                  <!-- Home Page -->
-                  <img
-                    class="project-rectangle-img java-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Home.png"
-                    alt="Project 1 Home Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/home'"
-                  />
+                    <!-- Home Page -->
+                    <img
+                            class="project-rectangle-img java-mySlides"
+                            src="assets/Tuiter%20React%20App%20Home.png"
+                            alt="Project 1 Home Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/home'"
+                    />
 
-                  <!-- Explore Page -->
-                  <img
-                    class="project-rectangle-img java-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Explore.png"
-                    alt="Project 1 Home Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/explore'"
-                  />
+                    <!-- Explore Page -->
+                    <img
+                            class="project-rectangle-img java-mySlides"
+                            src="assets/Tuiter%20React%20App%20Explore.png"
+                            alt="Project 1 Home Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/tuiter/explore'"
+                    />
 
-                  <!-- Labs Page -->
-                  <img
-                    class="project-rectangle-img java-mySlides"
-                    src="../assets/Tuiter%20React%20App%20Labs.png"
-                    alt="Project 1 Home Page"
-                    onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/'"
-                  />
+                    <!-- Labs Page -->
+                    <img
+                            class="project-rectangle-img java-mySlides"
+                            src="assets/Tuiter%20React%20App%20Labs.png"
+                            alt="Project 1 Home Page"
+                            onclick="location.href='https://a9--brilliant-rolypoly-fe81d3.netlify.app/'"
+                    />
                     <button class="java-prev" onclick="plusSlides(-1, 'java')">❮</button>
                     <button class="java-next" onclick="plusSlides(1, 'java')">❯</button>
-                  
 
-                  <div class="java-dots">
-                    <span class="java-dot" data-slide-to="1"></span>
-                    <span class="java-dot" data-slide-to="2"></span>
-                    <span class="java-dot" data-slide-to="3"></span>
-                    <span class="java-dot" data-slide-to="4"></span>
-                  </div>
+
+                    <div class="java-dots">
+                        <span class="java-dot" data-slide-to="1"></span>
+                        <span class="java-dot" data-slide-to="2"></span>
+                        <span class="java-dot" data-slide-to="3"></span>
+                        <span class="java-dot" data-slide-to="4"></span>
+                    </div>
                 </div>
                 <h2 class="skills-sub-title project-title">Swing MVC</h2>
                 <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-                  <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                  <div class="btn-icons">
-                    <span class="fa fa-github"></span>
-                    <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                    <img class="project-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
-                  </div>
-                  
-                  </button>
-  
-                  <button
-                    class="btn btn-color-2 project-btn live-demo-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-  
-                  <span class="fa fa-youtube"></span>
-  
-                  </button>
-                </div>
-              </div>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+                        <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                        <div class="btn-icons">
+                            <span class="fa fa-github"></span>
+                            <img class="project-icon" alt="intellij"
+                                 src="assets/IntelliJ_IDEA_Icon.svg"/>
+                            <img class="project-icon" alt="java"
+                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+                        </div>
 
-              <!-- project 3 -->
-              <div class="details-container color-container">
+                    </button>
+
+                    <button
+                            class="btn btn-color-2 project-btn live-demo-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+
+                        <span class="fa fa-youtube"></span>
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- project 3 -->
+            <div class="details-container color-container">
                 <div class="article-container">
-                  <img
-                    src="../assets/project-3.png"
-                    alt="Project 3"
-                    class="project-img"
-                  />
+                    <img
+                            src="assets/project-3.png"
+                            alt="Project 3"
+                            class="project-img"
+                    />
                 </div>
                 <h2 class="skills-sub-title project-title">Project Three</h2>
                 <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-                  <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                  <div class="btn-icons">
-                    <span class="fa fa-github"></span>
-                    <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                  </div>
-                  
-                  </button>
-  
-                  <button
-                    class="btn btn-color-2 project-btn live-demo-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-  
-                  <span class="fa fa-youtube"></span>
-  
-                  </button>
-                </div>
-              </div>
-            </div>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+                        <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                        <div class="btn-icons">
+                            <span class="fa fa-github"></span>
+                            <img class="project-icon" alt="intellij"
+                                 src="assets/IntelliJ_IDEA_Icon.svg"/>
+                        </div>
 
-            <!-- second row of projects -->
-            <div class="about-containers">
-              <div class="details-container color-container">
+                    </button>
+
+                    <button
+                            class="btn btn-color-2 project-btn live-demo-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+
+                        <span class="fa fa-youtube"></span>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- second row of projects -->
+        <div class="about-containers">
+            <div class="details-container color-container">
                 <div class="article-container">
-                  <img
-                    src="../assets/project-1.png"
-                    alt="Project 1"
-                    class="project-img"
-                  />
+                    <img
+                            src="assets/project-1.png"
+                            alt="Project 1"
+                            class="project-img"
+                    />
                 </div>
                 <h2 class="skills-sub-title project-title">Tuiter App</h2>
                 <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-                  <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                  <div class="btn-icons">
-                    <span class="fa fa-github"></span>
-                    <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                  </div>
-                  
-                  </button>
-  
-                  <button
-                    class="btn btn-color-2 project-btn live-demo-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-  
-                  <span class="fa fa-youtube"></span>
-  
-                  </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+                        <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                        <div class="btn-icons">
+                            <span class="fa fa-github"></span>
+                            <img class="project-icon" alt="intellij"
+                                 src="assets/IntelliJ_IDEA_Icon.svg"/>
+                        </div>
+
+                    </button>
+
+                    <button
+                            class="btn btn-color-2 project-btn live-demo-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+
+                        <span class="fa fa-youtube"></span>
+
+                    </button>
                 </div>
-              </div>
-              <div class="details-container color-container">
+            </div>
+            <div class="details-container color-container">
                 <div class="article-container">
-                  <img
-                    src="../assets/project-2.png"
-                    alt="Project 2"
-                    class="project-img"
-                  />
+                    <img
+                            src="assets/project-2.png"
+                            alt="Project 2"
+                            class="project-img"
+                    />
                 </div>
                 <h2 class="skills-sub-title project-title">Project Two</h2>
                 <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-                  <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                  <div class="btn-icons">
-                    <span class="fa fa-github"></span>
-                    <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                  </div>
-                  
-                  </button>
-  
-                  <button
-                    class="btn btn-color-2 project-btn live-demo-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-  
-                  <span class="fa fa-youtube"></span>
-  
-                  </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+                        <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                        <div class="btn-icons">
+                            <span class="fa fa-github"></span>
+                            <img class="project-icon" alt="intellij"
+                                 src="assets/IntelliJ_IDEA_Icon.svg"/>
+                        </div>
+
+                    </button>
+
+                    <button
+                            class="btn btn-color-2 project-btn live-demo-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+
+                        <span class="fa fa-youtube"></span>
+
+                    </button>
                 </div>
-              </div>
-              <div class="details-container color-container">
+            </div>
+            <div class="details-container color-container">
                 <div class="article-container">
-                  <img
-                    src="../assets/project-3.png"
-                    alt="Project 3"
-                    class="project-img"
-                  />
+                    <img
+                            src="assets/project-3.png"
+                            alt="Project 3"
+                            class="project-img"
+                    />
                 </div>
                 <h2 class="skills-sub-title project-title">Project Three</h2>
                 <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-                  <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
-                  <div class="btn-icons">
-                    <span class="fa fa-github"></span>
-                    <img class="project-icon" alt="intellij" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                  </div>
-                  
-                  </button>
-  
-                  <button
-                    class="btn btn-color-2 project-btn live-demo-btn"
-                    onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
-                  >
-  
-                  <span class="fa fa-youtube"></span>
-  
-                  </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+                        <!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
+                        <div class="btn-icons">
+                            <span class="fa fa-github"></span>
+                            <img class="project-icon" alt="intellij"
+                                 src="assets/IntelliJ_IDEA_Icon.svg"/>
+                        </div>
+
+                    </button>
+
+                    <button
+                            class="btn btn-color-2 project-btn live-demo-btn"
+                            onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+                    >
+
+                        <span class="fa fa-youtube"></span>
+
+                    </button>
                 </div>
-              </div>
-              
             </div>
-          </div>
-          <img
-            src="../assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='./#skills'"
-          />
-        </section>
 
-        <section id="skills">
-          <p class="section__text__p1">Explore My</p>
-          <h1 class="title">Skills</h1>
-          <!-- <h2>Skills in Software Development</h2> -->
-          <div class="skills-details-container">
-            <div class="about-containers">
+        </div>
+    </div>
+<!--    <img-->
+<!--            src="assets/arrow.png"-->
+<!--            alt="Arrow icon"-->
+<!--            class="icon arrow"-->
+<!--            onclick="location.href='./#skills'"-->
+<!--    />-->
+</section>
 
-              <div class="details-container">
+<section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <!-- <h2>Skills in Software Development</h2> -->
+    <div class="skills-details-container">
+        <div class="about-containers">
+
+            <div class="details-container">
                 <h2 class="skills-sub-title">Language</h2>
                 <div class="article-container">
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="C++" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg" />
-                    <div>
-                      <h3>C++</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="htmlCss" alt="HTML" width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
-                    <img class="htmlCss" alt="CSS" width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
-                    <div>
-                      <h3>HTML&CSS</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
-                    <div>
-                      <h3>Java</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-                    <div>
-                      <h3>JavaScript</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
-                    <div>
-                      <h3>Go</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="C++" width="30px"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg"/>
+                        <div>
+                            <h3>C++</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="htmlCss" alt="HTML" width="20px"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
+                        <img class="htmlCss" alt="CSS" width="20px"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
+                        <div>
+                            <h3>HTML&CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="Java"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="JavaScript"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="Go"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"/>
+                        <div>
+                            <h3>Go</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
 
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-                    <div>
-                      <h3>TypeScript</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                    <div>
-                      <h3>Python</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="TypeScript"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="Python"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
 
-                  <!-- React -->
-                  <article>
-                    <!-- <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  /> -->
-                    <img alt="R" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" />
-                    <div>
-                      <h3>R</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
+                    <!-- React -->
+                    <article>
+                        <!-- <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      /> -->
+                        <img alt="R"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"/>
+                        <div>
+                            <h3>R</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
 
 
                 </div>
-              </div>
+            </div>
 
-              <div class="details-container">
+            <div class="details-container">
                 <h2 class="skills-sub-title">Library</h2>
                 <div class="article-container">
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Material UI" src="https://mui.com/static/logo.svg" />
-                    <div>
-                      <h3>Material UI</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Node" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                    <div>
-                      <h3>Node JS</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-                    <div>
-                      <h3>Express JS</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  /> -->
-                    <img alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                    <div>
-                      <h3>React JS</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="JQuery" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
-                    <div>
-                      <h3>JQuery</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img alt="NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
-                    <div>
-                      <h3>NumPy</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img alt="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
-                    <div>
-                      <h3>Pandas</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img alt="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" />
-                    <div>
-                      <h3>PyTorch</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img  alt="Tensorflow" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />
-                    <div >
-                      <h3>Tensorflow</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="Material UI" src="https://mui.com/static/logo.svg"/>
+                        <div>
+                            <h3>Material UI</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="Node"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="Express"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/>
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      /> -->
+                        <img alt="React"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                        <div>
+                            <h3>React JS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img alt="JQuery"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"/>
+                        <div>
+                            <h3>JQuery</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img alt="NumPy"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/>
+                        <div>
+                            <h3>NumPy</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img alt="Pandas"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"/>
+                        <div>
+                            <h3>Pandas</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img alt="PyTorch"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>
+                        <div>
+                            <h3>PyTorch</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img alt="Tensorflow"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/>
+                        <div>
+                            <h3>Tensorflow</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
                 </div>
-              </div>
-
             </div>
 
-            <div class="about-containers">
+        </div>
 
-              <div class="details-container">
+        <div class="about-containers">
+
+            <div class="details-container">
                 <h2 class="skills-sub-title">IDE</h2>
                 <div class="article-container">
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="ide-icons" alt="intellij" width="30px" src="../assets/IntelliJ_IDEA_Icon.svg" />
-                    <div>
-                      <h3>Intellij <br><span>IDEA</span></h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="ide-icons" alt="Android Studio" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
-                    <div>
-                      <h3>Android <br><span>Studio</span></h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="ide-icons" alt="VScode" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
-                    <div>
-                      <h3>VS Code</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="ide-icons" alt="Rstudio" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" />
-                    <div>
-                      <h3>Rstudio</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="ide-icons" alt="PyCharm" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" />
-                    <div>
-                      <h3>PyCharm</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="ide-icons eclipse" alt="eclipse" src="../assets/Eclipse-SVG.svg" />
-                    <div>
-                      <h3>Eclipse</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img class="ide-icons jupyter" alt="JupyterNotebook" width="30px" src="../assets/Jupyter_logo.svg" />
-                    <div class="jupyter-container">
-                      <h3>Jupyter Notebook</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  /> -->
-                    <img class="ide-icons" alt="netbeans" src="../assets/Apache_NetBeans_Logo.svg" />
-                    <div class="netbeans-container">
-                      <h3>Netbeans</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="ide-icons" alt="intellij" width="30px"
+                             src="assets/IntelliJ_IDEA_Icon.svg"/>
+                        <div>
+                            <h3>Intellij <br><span>IDEA</span></h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="ide-icons" alt="Android Studio"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"/>
+                        <div>
+                            <h3>Android <br><span>Studio</span></h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="ide-icons" alt="VScode"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+                        <div>
+                            <h3>VS Code</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="ide-icons" alt="Rstudio"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg"/>
+                        <div>
+                            <h3>Rstudio</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="ide-icons" alt="PyCharm" width="30px"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg"/>
+                        <div>
+                            <h3>PyCharm</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="ide-icons eclipse" alt="eclipse" src="assets/Eclipse-SVG.svg"/>
+                        <div>
+                            <h3>Eclipse</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img class="ide-icons jupyter" alt="JupyterNotebook" width="30px"
+                             src="assets/Jupyter_logo.svg"/>
+                        <div class="jupyter-container">
+                            <h3>Jupyter Notebook</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      /> -->
+                        <img class="ide-icons" alt="netbeans"
+                             src="assets/Apache_NetBeans_Logo.svg"/>
+                        <div class="netbeans-container">
+                            <h3>Netbeans</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
 
 
                 </div>
-              </div>
-
-              <div class="details-container">
-                <h2 class="skills-sub-title">Software</h2>
-                <div class="article-container">
-                  <article>
-                    <img class="software-icons" alt="MySQLWorkbench" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-                    <div class="software-detail-container">
-                      <h3>MySQL Workbench</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="software-icons" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-                    <div class="software-detail-container">
-                      <h3>MongoDB</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img class="software-icons" alt="Anocondo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" />
-                    <div class="software-detail-container">
-                      <h3>Anocondo</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  /> -->
-                    <img class="software-icons omnigraffle" alt="Omnigraffle" src="../assets/omnigraffle.svg" />
-                    <div class="software-detail-container">
-                      <h3>Omnigraffle</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  
-                </div>
-              </div>
-
             </div>
 
-          </div>
+            <div class="details-container">
+                <h2 class="skills-sub-title">Software</h2>
+                <div class="article-container">
+                    <article>
+                        <img class="software-icons" alt="MySQLWorkbench"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
+                        <div class="software-detail-container">
+                            <h3>MySQL Workbench</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="software-icons" alt="MongoDB"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/>
+                        <div class="software-detail-container">
+                            <h3>MongoDB</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        /> -->
+                        <img class="software-icons" alt="Anocondo"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg"/>
+                        <div class="software-detail-container">
+                            <h3>Anocondo</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <!-- <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      /> -->
+                        <img class="software-icons omnigraffle" alt="Omnigraffle"
+                             src="assets/omnigraffle.svg"/>
+                        <div class="software-detail-container">
+                            <h3>Omnigraffle</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <img
+            src="assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow bottom-arrow"
+            onclick="location.href='./#profile'"
+    />
+</section>
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <a class="git" href="https://github.com/highhaoru"><span class="fa fa-github"></span></a>
+        <a href="mailto:jin.ha@northeastern.edu"><span class="fa fa-envelope"></span></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/hao-jin-love-programming/"><span
+                class="fa fa-linkedin"></span></a>
+        <a href="https://github.com/highhaoru"><span class="fa fa-youtube-play"></span></a>
+        <!-- <div class="contact-info-container">
           <img
-                  src="../assets/arrow.png"
-                  alt="Arrow icon"
-                  class="icon arrow bottom-arrow"
-                  onclick="location.href='./#profile'"
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
           />
-        </section>
+          <p><a href="mailto:examplemail@gmail.com">haojin960504@gmail.com</a></p>
+        </div> -->
 
-        <section id="contact">
-          <p class="section__text__p1">Get in Touch</p>
-          <h1 class="title">Contact Me</h1>
-          <div class="contact-info-upper-container">
-            <a class="git" href="https://github.com/highhaoru"><span class="fa fa-github"></span></a>
-            <a href="mailto:jin.ha@northeastern.edu"><span class="fa fa-envelope"></span></a>
-            <a class="linkedin" href="https://www.linkedin.com/in/hao-jin-love-programming/"><span class="fa fa-linkedin"></span></a>
-            <a href="https://github.com/highhaoru"><span class="fa fa-youtube-play"></span></a> 
-            <!-- <div class="contact-info-container">
-              <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <p><a href="mailto:examplemail@gmail.com">haojin960504@gmail.com</a></p>
-            </div> -->
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hao-jin-love-programming/">LinkedIn</a></p>
+        </div> -->
 
-            <!-- <div class="contact-info-container">
-              <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
-              <p><a href="https://www.linkedin.com/in/hao-jin-love-programming/">LinkedIn</a></p>
-            </div> -->
+    </div>
+</section>
 
-          </div>
-        </section>
-
-        <footer>
-          <nav>
-            <div class="nav-links-container">
-              <ul class="nav-links">
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Experience</a></li>
                 <li><a href="#publication">Publication</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-          <p>Copyright &#169; 2023 Hao Jin. All Rights Reserved.</p>
-        </footer>
-        
-        <script src="../script.js"></script>
-        <script src="../slideshow.js"></script>
-    </body>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2023 Hao Jin. All Rights Reserved.</p>
+</footer>
+
+<script src="functions/script.js"></script>
+<script src="functions/slideshow.js"></script>
+<script src="functions/portal.js"></script>
+<script src="functions/houdiniSetup.js"></script>
+
+</body>
 </html>
