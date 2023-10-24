@@ -141,7 +141,12 @@
                 </div>
 
               </div>
-
+              <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#publication'"
+              />  
             </div>
           </section>
           <br><br>
@@ -149,13 +154,16 @@
         <section id="publication">
           <p class="section__text__p1">Here is My</p>
           <h1 class="title">Publication</h1>
-          <br> 
-          <a class="paper-title" href="https://drive.google.com/file/d/1ZinqJpU5LZ0WCF20ca1ktiBWVJVoxIo8/view?usp=share_link"><span class="bold-text">Computer-Human Interactions (CHI) | 2024</span><span class="paper-title-note">(Under Review)</span></a><br>
-          <br> 
-          <a class="paper" href="https://drive.google.com/file/d/1UAdhD84toxwCMBkDd8W_w9FJ0x4YM7I7/view?usp=share_link">
-            Polly Talks About the Weather: Toward Evaluating the Expressive and Enrichment Potential 
-            of a Tablet-Based Speech Board in a single Goffin’s Cockatoo</a>
-        </section>
+          <div class="publication-containers">
+            <a class="paper-title" href="https://drive.google.com/file/d/1ZinqJpU5LZ0WCF20ca1ktiBWVJVoxIo8/view?usp=share_link"><span class="bold-text">Computer-Human Interactions (CHI) | 2024</span><span class="paper-title-note">(Under Review)</span></a><br>
+            <br> 
+            <a class="paper" href="https://drive.google.com/file/d/1UAdhD84toxwCMBkDd8W_w9FJ0x4YM7I7/view?usp=share_link">
+              Polly Talks About the Weather: Toward Evaluating the Expressive and Enrichment Potential 
+              of a Tablet-Based Speech Board in a single Goffin’s Cockatoo</a>
+          </div>
+          
+            
+          </section>
 
         <section id="projects">
           <!-- third row of projects -->
@@ -697,7 +705,7 @@
             src="./assets/arrow.png"
             alt="Arrow icon"
             class="icon arrow"
-            onclick="location.href='./#contact'"
+            onclick="location.href='./#skills'"
           />
         </section>
 
@@ -709,7 +717,7 @@
             <div class="about-containers">
 
               <div class="details-container">
-                <h2 class="skills-sub-title">Programming Language</h2>
+                <h2 class="skills-sub-title">Language</h2>
                 <div class="article-container">
                   <article>
                     <!-- <img
@@ -883,21 +891,21 @@
                     <img alt="NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
                     <div>
                       <h3>NumPy</h3>
-                      <p>Intermediate</p>
+                      <p>Experienced</p>
                     </div>
                   </article>
                   <article>
                     <img alt="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
                     <div>
                       <h3>Pandas</h3>
-                      <p>Intermediate</p>
+                      <p>Experienced</p>
                     </div>
                   </article>
                   <article>
                     <img alt="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" />
                     <div>
                       <h3>PyTorch</h3>
-                      <p>Intermediate</p>
+                      <p>Experienced</p>
                     </div>
                   </article>
                 </div>
@@ -916,7 +924,7 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="intellij" width="30px" src="./assets/IntelliJ_IDEA_Icon.svg" />
+                    <img class="ide-icons" alt="intellij" width="30px" src="./assets/IntelliJ_IDEA_Icon.svg" />
                     <div>
                       <h3>Intellij <br><span>IDEA</span></h3>
                       <p>Experienced</p>
@@ -928,7 +936,7 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="Android Studio" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
+                    <img class="ide-icons" alt="Android Studio" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
                     <div>
                       <h3>Android <br><span>Studio</span></h3>
                       <p>Experienced</p>
@@ -940,7 +948,7 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="VScode"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+                    <img class="ide-icons" alt="VScode"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
                     <div>
                       <h3>VS Code</h3>
                       <p>Experienced</p>
@@ -952,7 +960,7 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="Rstudio" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" />
+                    <img class="ide-icons" alt="Rstudio" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" />
                     <div>
                       <h3>Rstudio</h3>
                       <p>Intermediate</p>
@@ -964,7 +972,7 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="PyCharm" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" />
+                    <img class="ide-icons" alt="PyCharm" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" />
                     <div>
                       <h3>PyCharm</h3>
                       <p>Experienced</p>
@@ -976,14 +984,14 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img class="eclipse" alt="eclipse" src="./assets/Eclipse-SVG.svg" />
+                    <img class="ide-icons eclipse" alt="eclipse" src="./assets/Eclipse-SVG.svg" />
                     <div>
                       <h3>Eclipse</h3>
                       <p>Experienced</p>
                     </div>
                   </article>
                   <article>
-                    <img class="jupyter" alt="JupyterNotebook" width="30px" src="./assets/Jupyter_logo.svg" />
+                    <img class="ide-icons jupyter" alt="JupyterNotebook" width="30px" src="./assets/Jupyter_logo.svg" />
                     <div class="jupyter-container">
                       <h3>Jupyter Notebook</h3>
                       <p>Experienced</p>
@@ -995,7 +1003,7 @@
                     alt="Experience icon"
                     class="icon"
                   /> -->
-                    <img alt="netbeans" src="./assets/Apache_NetBeans_Logo.svg" />
+                    <img class="ide-icons" alt="netbeans" src="./assets/Apache_NetBeans_Logo.svg" />
                     <div class="netbeans-container">
                       <h3>Netbeans</h3>
                       <p>Experienced</p>
@@ -1010,14 +1018,9 @@
                 <h2 class="skills-sub-title">Software</h2>
                 <div class="article-container">
                   <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="Marterial UI" src="https://mui.com/static/logo.svg" />
-                    <div>
-                      <h3>Material UI</h3>
+                    <img class="software-icons" alt="MySQLWorkbench" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                    <div class="software-detail-container">
+                      <h3>MySQL Workbench</h3>
                       <p>Experienced</p>
                     </div>
                   </article>
@@ -1027,9 +1030,9 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="Node" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                    <div>
-                      <h3>Node JS</h3>
+                    <img class="software-icons" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                    <div class="software-detail-container">
+                      <h3>MongoDB</h3>
                       <p>Experienced</p>
                     </div>
                   </article>
@@ -1039,10 +1042,10 @@
                       alt="Experience icon"
                       class="icon"
                     /> -->
-                    <img alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-                    <div>
-                      <h3>Express JS</h3>
-                      <p>Intermediate</p>
+                    <img class="software-icons" alt="Anocondo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" />
+                    <div class="software-detail-container">
+                      <h3>Anocondo</h3>
+                      <p>Experienced</p>
                     </div>
                   </article>
                   <article>
@@ -1051,45 +1054,13 @@
                     alt="Experience icon"
                     class="icon"
                   /> -->
-                    <img alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                    <div>
-                      <h3>React JS</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <!-- <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    /> -->
-                    <img alt="JQuery" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
-                    <div>
-                      <h3>JQuery</h3>
+                    <img class="software-icons omnigraffle" alt="Omnigraffle" src="./assets/omnigraffle.svg" />
+                    <div class="software-detail-container">
+                      <h3>Omnigraffle</h3>
                       <p>Intermediate</p>
                     </div>
                   </article>
-                  <article>
-                    <img alt="NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
-                    <div>
-                      <h3>NumPy</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img alt="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" />
-                    <div>
-                      <h3>Pandas</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img alt="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" />
-                    <div>
-                      <h3>PyTorch</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
+                  
                 </div>
               </div>
 
@@ -1099,8 +1070,8 @@
           <img
                   src="./assets/arrow.png"
                   alt="Arrow icon"
-                  class="icon arrow"
-                  onclick="location.href='./#projects'"
+                  class="icon arrow bottom-arrow"
+                  onclick="location.href='./#profile'"
           />
         </section>
 

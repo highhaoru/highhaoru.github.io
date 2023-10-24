@@ -332,7 +332,7 @@ section{
   #about {
     position: relative;
     display: inline-block;
-    height:76vh;
+    height:70vh;
   }
   
   .about-containers {
@@ -360,6 +360,10 @@ section{
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+  }
+
+  .bottom-arrow {
+    transform: rotate(180deg);
   }
   
   .details-container {
@@ -413,7 +417,7 @@ section{
   
   /* PUBLICATION SECTION */
   #publication{
-    height: 35vh;
+    height: 50vh;
   }
   
   #publication a{
@@ -436,9 +440,10 @@ section{
   }
 
   .publication-containers {
-    gap: 2rem;
-    /* margin-bottom: -20rem;
-    margin-top: 5rem; */
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    padding: 1.5rem;
   
   }
 
@@ -826,6 +831,22 @@ article .icon {
 
 .netbeans-container {
   align-self: center;
+}
+
+.software-icons {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 40px;
+  
+}
+
+.omnigraffle {
+  padding-left: 10px;
+}
+
+.software-detail-container {
+  align-self: center;
+  justify-content: center;
 }
 
 /* BUTTONS DOTS */
