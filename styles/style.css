@@ -31,16 +31,27 @@ nav, .nav-links{
     display:flex;
 }
 
+/* nav{
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+} */
+
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;  
 }
 
 .nav-links{
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 a{
