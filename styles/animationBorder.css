@@ -57,3 +57,13 @@
     color: #45f3ff; /* 或者您想要的任何颜色 */
     text-decoration: none; /* 去掉链接下划线 */
 }
+
+.box:hover {
+    background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 5%,
+    transparent 5%, transparent 40%,
+    #45f3ff 50%);
+}
+
+.box:hover a {
+    color: #ff2770;
+}

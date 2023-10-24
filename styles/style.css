@@ -482,34 +482,30 @@ section {
 }
 
 /* MUSIC SECTION */
-#music .portal {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: radial-gradient(circle, #000, #333, #000);
+#music {
     position: relative;
-    overflow: hidden;
-    margin-right: 0;
 }
 
-.swirl {
-    width: 150%;
-    height: 150%;
-    background: radial-gradient(circle, transparent, #0008, #000c);
-    position: absolute;
-    top: -25%;
-    left: -25%;
-    animation: swirl 10s infinite;
-    margin-right: 0;
+.wormhole-containers {
+    display: flex;
+    justify-content: center; /* This will center the child elements horizontally */
+    align-items: center;     /* This will center the child elements vertically */
+    height: 100%;
 }
 
-@keyframes swirl {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.wormhole-link {
+    display: flex;
+    /*width: 400px;*/
+    /*height: 400px;*/
+    /*border-radius: 50%;*/
+    justify-content: center;
+    align-self: center;
+}
+
+.wormhole {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
 }
 
 

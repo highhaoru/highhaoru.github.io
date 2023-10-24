@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/highhaoru/highhaoru.github.io/issues"
   },
-  "homepage": "https://github.com/highhaoru/highhaoru.github.io#readme"
+  "homepage": "https://github.com/highhaoru/highhaoru.github.io#readme",
+  "dependencies": {
+    "three": "^0.157.0"
+  }
 }
