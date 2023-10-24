@@ -443,7 +443,7 @@ section {
 
 /* PUBLICATION SECTION */
 #publication {
-    height: 50vh;
+    height: 40vh;
 }
 
 #publication a {
@@ -484,6 +484,7 @@ section {
 /* MUSIC SECTION */
 #music {
     position: relative;
+    height: 80vh;
 }
 
 .wormhole-containers {

@@ -26,6 +26,10 @@ body:before {
 }
 
 .music-tunnel-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
     position: relative;
     display: inline-flex;
     vertical-align: middle;
@@ -35,12 +39,13 @@ body:before {
 
 .tunnel-wrapper {
     position: absolute;
-    width: 1000px;
-    height: 1000px;
-    top: -500px;
-    left: -500px;
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: -250px;
+    transform: translate(-50%, -50%) translateZ(-250px); /* 调整translateZ的值 */
     vertical-align: middle;
-    transform: translate(-50%, -50%) translateZ(-500px);
+    /*transform: translate(-50%, -50%) translateZ(-500px);*/
     transform-style: preserve-3d;
     animation-fill-mode: forwards;
     animation: move 12s infinite linear;
