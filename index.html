@@ -8,16 +8,16 @@
     <!-- favicon maker website: https://www.favicon.cc/ -->
     <!-- <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" /> -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/mediaQueries.css"/>
-    <link rel="stylesheet" href="styles/animationBorder.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/mediaQueries.css"/>
+    <link rel="stylesheet" href="./styles/animationBorder.css"/>
 
 <!--    <link rel="stylesheet" href="styles/hyperspace.css"/>-->
     <script src="https://kit.fontawesome.com/bda43205a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav id="desktop-nav">
-    <div class="logo">Hao Jin</div>
+    <div class="logo"><a href="#profile">Hao Jin</a></div>
     <div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -32,7 +32,7 @@
 </nav>
 
 <nav id="hamburger-nav">
-    <div class="logo">Hao Jin</div>
+    <div class="logo"><a href="#profile">Hao Jin</a></div>
     <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
@@ -163,7 +163,6 @@
 <!--        />-->
     </div>
 </section>
-<br><br>
 
 <section id="publication">
     <p class="section__text__p1">Here is My</p>
@@ -185,7 +184,7 @@
     <p class="section__text__p1">Get in</p>
     <h1 class="title">The Portal!</h1>
     <div class="wormhole-container">
-        <a class="wormhole-link" href="https://github.com/highhaoru">
+        <a class="wormhole-link" href="./pages/music.html">
             <img class="wormhole" src="./assets/blackhole.gif" alt="wormhole">
         </a>
     </div>
@@ -1206,24 +1205,13 @@
 </section>
 
 <footer>
-    <nav>
-        <div class="nav-links-container">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Experience</a></li>
-                <li><a href="#publication">Publication</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <p>Copyright &#169; 2023 Hao Jin. All Rights Reserved.</p>
 </footer>
 
-<script src="functions/script.js"></script>
-<script src="functions/slideshow.js"></script>
-<script src="functions/portal.js"></script>
-<script src="functions/houdiniSetup.js"></script>
+<script src="./functions/script.js"></script>
+<!--<script src="./functions/slideshow.js"></script>-->
+<!--<script src="./functions/portal.js"></script>-->
+<script src="./functions/houdiniSetup.js"></script>
 
 </body>
 </html>
