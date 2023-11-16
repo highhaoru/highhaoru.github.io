@@ -1002,3 +1002,13 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* SoundCloud */
+#soundCloud,
+#skills {
+    height: fit-content;
+}
+
+#soundCloud {
+   display: block;
+}
