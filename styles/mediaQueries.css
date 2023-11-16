@@ -1,4 +1,56 @@
-@media screen and (max-width: 1400px) {
+@media (min-width: 2501px) and (max-width: 3000px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #music, 
+  #projects,
+  #skills {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #music, 
+  #projects,
+  #skills {
+    height: fit-content;
+  }
+
+
+}
+
+@media (min-width: 1401px) and (max-width: 2000px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #music, 
+  #projects,
+  #skills {
+    height: fit-content;
+  }
+
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
     #profile {
       height: 83vh;
       margin-bottom: 6rem;
@@ -7,9 +59,13 @@
       flex-wrap: wrap;
     }
     #contact,
-    #projects {
+    #music, 
+    #projects,
+    #skills {
       height: fit-content;
     }
+
+
   }
   
   @media screen and (max-width: 1200px) {
@@ -20,6 +76,25 @@
       display: flex;
     }
 
+    #contact,
+    #about,
+    #publication,
+    #music, 
+    #projects,
+    #skills {
+      height: fit-content;
+    }
+
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+
+    #profile img {
+      width: 100%;
+      height: 100%;
+    }
+
     #publication,
     #skill,
     .skills-details-container {
@@ -28,7 +103,15 @@
 
     #profile,
     .section-container {
-      display: block;
+      display: flex;
+    }
+
+    #about,
+    .about-section-container {
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      flex-direction: column; /* 如有必要，设置子元素为垂直堆叠 */
     }
 
     .section-container {
@@ -38,24 +121,199 @@
     .arrow {
       display: none;
     }
+
     section,
     .section-container {
       height: fit-content;
     }
+
     section {
       margin: 0 5%;
     }
+
     .section__pic-container {
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
     }
+
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
+    }
+
     .about-containers {
       margin-top: 0;
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+
+    #contact,
+    #about,
+    #publication,
+    #music, 
+    #projects,
+    #skills {
+      height: fit-content;
+    }
+
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+
+    #profile img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #publication,
+    #skill,
+    .skills-details-container {
+      margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+      display: flex;
+    }
+
+    .section-container {
+      flex-direction: column;  /* 将 divs 堆叠起来 */
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    section,
+    .section-container {
+      height: fit-content;
+    }
+
+    section {
+      margin: 0 5%;
+    }
+
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #about,
+    .about-section-container {
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      flex-direction: column; /* 如有必要，设置子元素为垂直堆叠 */
+    }
+
+    .about-containers {
+      margin-top: 0;
+      justify-self: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+
+    #contact,
+    #about,
+    #publication,
+    #music, 
+    #projects,
+    #skills {
+      height: fit-content;
+    }
+
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+
+    #profile img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #publication,
+    #skill,
+    .skills-details-container {
+      margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+      display: flex;
+    }
+
+    .section-container {
+      flex-direction: column;  /* 将 divs 堆叠起来 */
+    }
+
+    #about,
+    .about-section-container {
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      flex-direction: column; /* 如有必要，设置子元素为垂直堆叠 */
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    section,
+    .section-container {
+      height: fit-content;
+    }
+
+    section {
+      margin: 0 5%;
+    }
+
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-containers {
+      margin-top: 0;
+      justify-self: center;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
     #contact,
     footer {
       height: 40vh;
@@ -64,6 +322,27 @@
       height: 83vh;
       margin-bottom: 0;
     }
+
+    #profile img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #profile,
+    .section-container {
+      display: block;
+    }
+
+    #contact,
+    #profile,
+    #about,
+    #publication,
+    #music, 
+    #projects,
+    #skills {
+      height: fit-content;
+    }
+
     article {
       font-size: 1rem;
     }
@@ -94,10 +373,20 @@
       gap: 0.5rem;
       text-align: center;
     }
+    
+    .section-container,
     .section__pic-container {
-      width: auto;
-      height: 46vw;
+      height: fit-content;
+      display: block;
+    }
+    .section__pic-container {
+      /* width: auto;
+      height: 46vw; */
       justify-content: center;
+    }
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
     }
     .section__text__p2 {
       font-size: 1.25rem;
@@ -111,33 +400,87 @@
   }
 
   @media screen and (max-width: 480px) {
-    /* 调整整体字体大小 */
-    body {
-        font-size: 14px;
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
     }
 
-    /* 如果你有一个大的标题，你可能想要减小它的大小 */
+    #profile img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #profile,
+    .section-container {
+      display: block;
+    }
+
+    #contact,
+    #profile,
+    #about,
+    #publication,
+    #music, 
+    #projects,
+    #skills {
+      height: fit-content;
+    }
+
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .skills-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    
+    .section-container,
+    .section__pic-container {
+      height: fit-content;
+      display: block;
+    }
+    .section__pic-container {
+      /* width: auto;
+      height: 46vw; */
+      justify-content: center;
+    }
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
     .title {
-        font-size: 24px;  /* 只是一个示例，根据实际需求调整 */
+      font-size: 2rem;
     }
-
-    /* 调整间距和填充 */
-    .some-element {
-        margin: 5px;
-        padding: 5px;
+    .text-container {
+      text-align: justify;
     }
-
-    /* 如果你有一个导航菜单，可能需要调整或隐藏某些元素 */
-    .nav-item {
-        display: block;   /* 变为块级元素，使其占满整行 */
-        margin: 5px 0;   /* 添加上下边距 */
-    }
-
-    /* 如果你的页面有图片，可能需要调整它们的大小 */
-    .some-image {
-        width: 100%;   /* 使图片宽度适应其容器 */
-        height: auto;  /* 保持图片的原始纵横比 */
-    }
-
-    /* 其他需要调整的样式... */
 }

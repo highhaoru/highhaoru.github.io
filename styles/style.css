@@ -360,6 +360,9 @@ section {
     position: relative;
     display: inline-block;
     height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .about-containers {
