@@ -286,6 +286,12 @@ section {
     border: 0 solid rgb(53, 53, 53);
 }
 
+#socials-container .soundcloud:hover {
+    background-color: white;
+    color: rgb(239, 110, 11);
+    border: 0 solid rgb(53, 53, 53);
+}
+
 .logo_img {
     border-radius: 50%;
     height: 95%;
@@ -969,6 +975,12 @@ article .icon {
 .contact-info-upper-container .linkedin:hover {
     background-color: white;
     color: rgb(65, 39, 237);
+    border: 0 solid rgb(53, 53, 53);
+}
+
+.contact-info-upper-container .soundcloud:hover {
+    background-color: white;
+    color: rgb(239, 110, 11);
     border: 0 solid rgb(53, 53, 53);
 }
 
