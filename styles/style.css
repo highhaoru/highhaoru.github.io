@@ -561,6 +561,7 @@ section {
 .tuiter-mySlides,
 .java-mySlides,
 .gymUi-mySlides {
+    border-radius: 2rem;
     display: none;
     width: 100%;
 }
