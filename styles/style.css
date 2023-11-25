@@ -533,8 +533,16 @@ section {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    /* width: auto; 
+    height: auto; */
+    transition: filter 0.5s ease; /* 过渡持续时间 0.5 秒 */
+}
+
+.project-img:hover  {
+    cursor: pointer;
+    filter: brightness(50%);
 }
 
 /* project 1 & 2 */
@@ -849,7 +857,8 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 1rem;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center; 
 }
 
 article {

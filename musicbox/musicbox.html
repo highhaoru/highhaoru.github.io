@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hao's Musicbox</title>
+	<meta name="description" content="A cool one page music app">
+	<meta name="author" content="Hao Jin">
+	<link rel="icon" type="image/x-icon" href="../assets/favicon.png"/>
+	<link rel="stylesheet" href="musicbox.css">
+	<link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="stylesheet" href="../styles/mediaQueries.css"/>
+    <link rel="stylesheet" href="../styles/animationBorder.css"/>
+</head>
+
+<body>
+	<nav id="desktop-nav">
+		<div class="logo"><a href="../index.html#profile">Hao Jin</a></div>
+		<div>
+			<ul class="nav-links">
+				<!--            <li><a href="index.html#about">About</a></li>-->
+				<!--            <li><a href="index.html#publication">Publication</a></li>-->
+			   <li>
+				   <div class="box"><a href="./music.html#soundCloud">Music</a></div>
+			   </li>
+				<!--<li><a href="#music">Music</a></li>-->
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<!--            <li><a href="index.html#contact">Contact</a></li>-->
+			</ul>
+		</div>
+		</div>
+	</nav>
+	
+	<nav id="hamburger-nav">
+		<div class="logo"><a href="#profile">Hao Jin</a></div>
+		<div class="hamburger-menu">
+			<div class="hamburger-icon" onclick="toggleMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="menu-links">
+				<ul>
+					<!--                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>-->
+					<!--                <li><a href="index.html#publication" onclick="toggleMenu()">Publication</a></li>-->
+					<li class="menu-music-li">
+						<div class="box"><a href="#soundCloud" onclick="toggleMenu()">Music</a></div>
+					</li>
+					<!--<li><a href="#music" onclick="toggleMenu()">Music</a></li>-->
+					<!--                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>-->
+					<li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+					<!--            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>-->
+				</ul>
+	
+			</div>
+		</div>
+	</nav>
+	<br><br><br><br>
+	<h1>Generative Music Box</h1>
+	<canvas id="canvas" width="1000" height="600"></canvas>
+
+	<footer>
+		<p>Copyright &#169; 2023 Hao Jin. All Rights Reserved.</p>
+	</footer>
+	<script src="BufferLoader.js"></script>
+	<script src="Audio.js"></script>
+	<script src="View.js"></script>
+	<script src="musicbox.js"></script>
+
+	<script src="../functions/script.js"></script>
+	<script src="../functions/slideshow.js"></script>
+	<!--<script src="./functions/portal.js"></script>-->
+	<script src="../functions/houdiniSetup.js"></script>
+</body>
+</html>
