@@ -1,3 +1,51 @@
+.technics {
+	font-weight: bolder;
+}
+
+.title {
+	font-size: 3rem;
+    text-align: center;
+	color: rgb(53, 53, 53);
+}
+
+#musicbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 #canvas {
 	border: 1px solid black;
+	align-self: center;
+	justify-content: center;
+}
+
+#instruction {
+	height:550px;
+	align-self: center;
+	justify-self: center;
+}
+
+.project-text-container {
+    /* align-self: center;
+    text-align: center; */
+    align-items: flex-start;
+}
+
+.slides-arrow {
+    position: fixed; /* 固定位置 */
+    top: 10%; /* 垂直居中 */
+    font-size: 50px; /* 箭头大小 */
+	font-weight: bolder;
+    text-decoration: none; /* 去除下划线 */
+    color: black; /* 箭头颜色 */
+}
+
+#leftArrow {
+    left: 10px; /* 靠左位置 */
+}
+
+#rightArrow {
+    right: 10px; /* 靠右位置 */
 }

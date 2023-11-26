@@ -19,6 +19,11 @@ p {
     color: rgb(85, 85, 85);
 }
 
+h5 {
+    color: rgb(85, 85, 85);
+    font-size: 1.5rem;
+}
+
 /* TRANSITION */
 
 a, .btn {
@@ -1033,4 +1038,10 @@ footer p {
 
 #soundCloud {
    display: block;
+}
+
+/* musicbox */
+#musicbox,
+#skills {
+    height: fit-content;
 }
