@@ -1047,3 +1047,36 @@ footer p {
 #skills {
     height: fit-content;
 }
+
+/* arrow */
+.slides-arrow {
+    position: fixed; /* 固定位置 */
+    top: 10%; /* 垂直居中 */
+    font-size: 50px; /* 箭头大小 */
+	font-weight: bolder;
+    text-decoration: none; /* 去除下划线 */
+    color: black; /* 箭头颜色 */
+}
+
+#leftArrow {
+    left: 10px; /* 靠左位置 */
+}
+
+#rightArrow {
+    right: 10px; /* 靠右位置 */
+}
+
+/* honors */
+.img-container {
+    /* align-self: center; */
+    text-align: center;
+    align-items: flex-start;
+    align-self: center;
+	justify-content: center;
+}
+.honor-img {
+    width: 600px;
+    height: 600px;
+    border-radius: 2rem;
+    transition: filter 0.5s ease; /* 过渡持续时间 0.5 秒 */
+}

@@ -9,6 +9,7 @@
   #contact,
   #music, 
   #projects,
+  #instruction,
   #honors,
   #skills {
     height: fit-content;
@@ -28,6 +29,7 @@
   }
   #contact,
   #music, 
+  #instruction,
   #projects,
   #honors,
   #skills {
@@ -70,6 +72,7 @@
     }
     #contact,
     #music, 
+    #instruction,
     #projects,
     #honors,
     #skills {
@@ -93,6 +96,7 @@
     #about,
     #publication,
     #music, 
+    #instruction,
     #projects,
     #honors,
     #skills {
@@ -177,6 +181,7 @@
     #about,
     #publication,
     #music, 
+    #instruction,
     #honors,
     #projects,
     #skills {
@@ -263,6 +268,7 @@
     #publication,
     #music, 
     #honors,
+    #instruction,
     #projects,
     #skills {
       height: fit-content;
@@ -366,6 +372,7 @@
     #about,
     #publication,
     #music, 
+    #instruction,
     #honors,
     #projects,
     #skills {
@@ -457,6 +464,7 @@
     #honors,
     #about,
     #publication,
+    #instruction,
     #music, 
     #projects,
     #skills {
