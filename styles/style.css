@@ -1114,7 +1114,7 @@ footer p {
     width: 610px;
 }
 
-/* General Button Dots */
+/* performanceLvlCert Button Dots */
 .performanceLvlCert-dots {
     position: absolute;
     left: 50%; /* 从左侧开始 */
@@ -1177,3 +1177,120 @@ footer p {
     right: 20px; /* 可以根据需要调整 */
 }
 
+/* nationalGoldAward Button Dots */
+.nationalGoldAward-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* nationalGoldAward Dots */
+.nationalGoldAward-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nationalGoldAward-dot:hover {
+    background-color: #717171;
+}
+
+.nationalGoldAward-dot.active {
+    background-color: #717171;
+}
+
+/* nationalGoldAward-prev and nationalGoldAward-next */
+.nationalGoldAward-prev,
+.nationalGoldAward-next {
+    position: absolute;
+    top: calc(100% + 20px);
+    z-index: 1;
+    cursor: pointer;
+    background-color: lightgray;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+}
+
+.nationalGoldAward-prev-slides {
+    position: relative;
+}
+
+.nationalGoldAward-prev:hover,
+.nationalGoldAward-next:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+.nationalGoldAward-prev {
+    left: 20px;
+}
+
+.nationalGoldAward-next {
+    right: 20px;
+}
+
+/* performerAward Button Dots */
+.performerAward-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* performerAward Dots */
+.performerAward-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.performerAward-dot:hover {
+    background-color: #717171;
+}
+
+.performerAward-dot.active {
+    background-color: #717171;
+}
+
+/* performerAward-prev and performerAward-next */
+.performerAward-prev,
+.performerAward-next {
+    position: absolute;
+    top: calc(100% + 20px);
+    z-index: 1;
+    cursor: pointer;
+    background-color: lightgray;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+}
+
+.performerAward-prev:hover,
+.performerAward-next:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+.performerAward-prev {
+    left: 20px;
+}
+
+.performerAward-next {
+    right: 20px;
+}
