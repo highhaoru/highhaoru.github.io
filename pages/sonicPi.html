@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hao's Musicbox</title>
-	<meta name="description" content="A cool one page music app">
+	<title>Hao's Sonic Pi</title>
+	<meta name="description" content="Music created using Sonic Pi">
 	<meta name="author" content="Hao Jin">
 	<link rel="icon" type="image/x-icon" href="../assets/favicon.png"/>
 	<link rel="stylesheet" href="musicbox.css">
@@ -60,22 +60,28 @@
 	</nav>
 	<br><br><br><br>
 
-	<a href="../pages/sonicPi.html" id="leftArrow" class="slides-arrow">&#8592;</a>
+	<a href="../pages/aiMusicApp.html" id="leftArrow" class="slides-arrow">&#8592;</a>
 
-	<a href="../pages/lastProject.html" id="rightArrow" class="slides-arrow">&#8594;</a>
+	<a href="../musicbox/musicbox.html" id="rightArrow" class="slides-arrow">&#8594;</a>
 	
-	<section id="musicbox">
-		<p class="section__text__p1">Please Click on The Black Canvas to Make A</p>
-		<h1 class="title">Generative Music Box</h1>
-		<canvas id="canvas" width="940" height="600"></canvas>
-		<br>
-		<button
-			class="btn btn-color-2 project-btn live-demo-btn"
-			onclick="location.href='../pages/projects.html#projects'"
-			>
-			More Projects
-		</button>
-	</section>
+    <section id="music sonicpi">
+        <!-- <p class="section__text__p1">One of My</p> -->
+        <h1 class="title">Sonic Pi Code. Music.</h1>
+        <div class="wormhole-container">
+            <!-- <a class="wormhole-link" href="./pages/music.html">
+                <img class="wormhole" src="./assets/blackhole.gif" alt="wormhole">
+            </a> -->
+            <iframe class="wormhole-link" src="https://www.youtube.com/embed/7nwavQToRBQ?si=ZP7p3WVzc0iAH1NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <iframe class="wormhole-link" src="https://www.youtube.com/embed/lYKU-SBAaqI?si=ZvXvNI3i0UewrJ88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        </div>
+        <br>
+        <button
+            class="btn btn-color-2 project-btn live-demo-btn"
+            onclick="location.href='../pages/projects.html#projects'"
+            >
+            More Projects
+        </button>
+    </section>
 
 	<section id="instruction">
 		<div class="project-text-container">
@@ -86,7 +92,7 @@
 				providing users with a singular experience in generating music through interactions with the canvas.
 			</p>
 
-			<br><br>
+				<br><br>
 
 			<h5>Core Technical Aspects:</h5>
 			<ul>
@@ -99,12 +105,9 @@
 				<li class="technics">Web Audio API</li>
 				<p>Harnesses Web Audio API for advanced audio creation.</p>
 			</ul>
-
-			<br>
-
 			<button
 					class="btn btn-color-2 project-btn"
-					onclick="location.href='https://github.com/highhaoru/highhaoru.github.io/tree/main/musicbox'"
+					onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
 			>
 				<!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
 				<div class="btn-icons">
@@ -116,7 +119,6 @@
 				</div>
 
 			</button>
-			
 			<!-- <button
 					class="btn btn-color-2 project-btn live-demo-btn"
 					onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
@@ -209,13 +211,13 @@
 	<footer>
 		<p>Copyright &#169; 2023 Hao Jin. All Rights Reserved.</p>
 	</footer>
-	<script src="BufferLoader.js"></script>
+	<!-- <script src="BufferLoader.js"></script>
 	<script src="Audio.js"></script>
 	<script src="View.js"></script>
-	<script src="musicbox.js"></script>
+	<script src="musicbox.js"></script> -->
 
 	<script src="../functions/script.js"></script>
-	<script src="../functions/slideshow.js"></script>
+	<!-- <script src="../functions/slideshow.js"></script> -->
 	<!--<script src="./functions/portal.js"></script>-->
 	<script src="../functions/houdiniSetup.js"></script>
 </body>

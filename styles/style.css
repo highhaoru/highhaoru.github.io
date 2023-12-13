@@ -398,9 +398,10 @@ section {
 }
 
 .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    position: fixed;
+    right: 30px; /* 调整为所需的像素值 */
+    bottom: 50px; /* 调整为所需的像素值 */
+    z-index: 1000; /* 确保它在其他元素上方 */
 }
 
 .bottom-arrow {
