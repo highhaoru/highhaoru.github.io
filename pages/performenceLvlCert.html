@@ -75,14 +75,48 @@
         <h1 class="title">Performance-Level Certificate</h1>
         <br><br>
 		<div class="project-text-container">
-            <div class="img-container">
-                <img
-                src="../assets/project-2.png"
+            <div class="img-container details-container color-container">
+				
+                <!-- <img
+                src="../assets/Performence Level Certificate English.png"
                 alt="Project 2"
                 class="honor-img"
                 />
+				<br><br>
+				<img
+                src="../assets/Performence Level Certificate.png"
+                alt="Project 2"
+                class="honor-img"
+                /> -->
+
+				<div class="article-container manual-slideshow-container performanceLvlCert-slides">
+					<!-- Home Page -->
+					<img
+							class="honor-img performanceLvlCert-mySlides"
+							src="../assets/Performence%20Level%20Certificate%20English.png"
+							alt="Working Project 1 Home Page"
+							onclick="location.href='https://haojin-fitness.netlify.app/'"
+					/>
+	
+					<!-- Personal Training Page -->
+					<img
+							class="honor-img performanceLvlCert-mySlides"
+							src="../assets/Performence%20Level%20Certificate.png"
+							alt="Working Project 1 Personal Training Page"
+							onclick="location.href='https://haojin-fitness.netlify.app/pages/personaltraining'"
+					/>
+	
+					<br><br>
+					<button class="performanceLvlCert-prev" onclick="plusSlides(-1, 'performanceLvlCert')">❮</button>
+					<button class="performanceLvlCert-next" onclick="plusSlides(1, 'performanceLvlCert')">❯</button>
+	
+					<div class="performanceLvlCert-dots">
+						<span class="performanceLvlCert-dot" data-slide-to="1"></span>
+						<span class="performanceLvlCert-dot" data-slide-to="2"></span>
+					</div>
+				</div>
             </div>
-            <br><br>
+            <br><br><br><br>
 			<h5>Project Overview:</h5>
 			<p>Build a Generative Music Box" is an engaging web application development project centered around the creation of generative, ambient music. 
 				This project offers a distinctive fusion of audio and visual programming, 
@@ -214,7 +248,7 @@
 	<!-- <script src="musicbox.js"></script> -->
 
 	<script src="../functions/script.js"></script>
-	<script src="../functions/slideshow.js"></script>
+	<script src="../functions/performanceLvlCert.js"></script>
 	<!--<script src="./functions/portal.js"></script>-->
 	<script src="../functions/houdiniSetup.js"></script>
 </body>
