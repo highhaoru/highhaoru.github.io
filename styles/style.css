@@ -408,14 +408,16 @@ section {
     transform: rotate(180deg);
 }
 
-.project-text-container {
+/* only used in honor pages */
+.honor-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
 
-.details-container {
+/* only honor pages details container */
+.honor-details-container {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -423,6 +425,16 @@ section {
     border: rgb(163, 163, 163) 0.1rem solid;
     text-align: center;
     width: 600px;
+}
+
+/* general details container */
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    text-align: center;
 }
 
 .details-container span {
