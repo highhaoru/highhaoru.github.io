@@ -594,7 +594,8 @@ section {
 /* Slides General */
 .tuiter-mySlides,
 .java-mySlides,
-.gymUi-mySlides{
+.gymUi-mySlides,
+.snfa-mySlides{
     border-radius: 2rem;
     display: none;
     width: 100%;
@@ -610,7 +611,9 @@ section {
 .java-prev,
 .java-next,
 .gymUi-prev,
-.gymUi-next{
+.gymUi-next,
+.snfa-prev,
+.snfa-next{
     position: absolute;
     top: 90%;
     z-index: 1;
@@ -686,6 +689,25 @@ section {
 }
 
 .gymUi-next {
+    right: 0;
+}
+
+/* SNFA Project */
+.snfa-slides {
+    position: relative;
+}
+
+.snfa-prev:hover,
+.snfa-next:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+.snfa-prev {
+    left: 0;
+}
+
+.snfa-next {
     right: 0;
 }
 
@@ -862,6 +884,26 @@ section {
 }
 
 .gymUi-dot.active {
+    background-color: #717171;
+}
+
+/* SNFA Dots */
+.snfa-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.snfa-dot:hover {
+    cursor: pointer;
+    background-color: #717171;
+}
+
+.snfa-dot.active {
     background-color: #717171;
 }
 
