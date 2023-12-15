@@ -595,10 +595,22 @@ section {
 .tuiter-mySlides,
 .java-mySlides,
 .gymUi-mySlides,
-.snfa-mySlides{
+.snfa-mySlides,
+.gymMngSys-mySlides,
+.graphics-mySlides {
     border-radius: 2rem;
     display: none;
     width: 100%;
+}
+
+/* BUTTONS DOTS */
+.java-dots,
+.tuiter-dots,
+.gymUi-dots,
+.snfa-dots,
+.gymMngSys-dots,
+.graphics-dots {
+    margin-top: -20px;
 }
 
 /* Tuiter Project */
@@ -613,7 +625,11 @@ section {
 .gymUi-prev,
 .gymUi-next,
 .snfa-prev,
-.snfa-next{
+.snfa-next,
+.gymMngSys-prev,
+.gymMngSys-next,
+.graphics-prev,
+.graphics-next{
     position: absolute;
     top: 90%;
     z-index: 1;
@@ -708,6 +724,44 @@ section {
 }
 
 .snfa-next {
+    right: 0;
+}
+
+/* Gym Management System Project */
+.gymMngSys-slides {
+    position: relative;
+}
+
+.gymMngSys-prev:hover,
+.gymMngSys-next:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+.gymMngSys-prev {
+    left: 0;
+}
+
+.gymMngSys-next {
+    right: 0;
+}
+
+/* Computer Graphics Project */
+.graphics-slides {
+    position: relative;
+}
+
+.graphics-prev:hover,
+.graphics-next:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+.graphics-prev {
+    left: 0;
+}
+
+.graphics-next {
     right: 0;
 }
 
@@ -907,6 +961,46 @@ section {
     background-color: #717171;
 }
 
+/* Gym Management System Dots */
+.gymMngSys-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.gymMngSys-dot:hover {
+    cursor: pointer;
+    background-color: #717171;
+}
+
+.gymMngSys-dot.active {
+    background-color: #717171;
+}
+
+/* Computer Graphics Dots */
+.graphics-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.graphics-dot:hover {
+    cursor: pointer;
+    background-color: #717171;
+}
+
+.graphics-dot.active {
+    background-color: #717171;
+}
+
 /* SKILL SECTION */
 
 #skills {
@@ -1000,13 +1094,7 @@ article .icon {
     justify-content: center;
 }
 
-/* BUTTONS DOTS */
 
-.java-dots,
-.tuiter-dots,
-.gymUi-dots {
-    margin-top: -20px;
-}
 
 /* CONTACT */
 

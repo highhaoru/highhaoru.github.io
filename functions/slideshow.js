@@ -3,7 +3,9 @@ const slideIndexes = {
   'tuiter': 1,
   'java': 1,
   'gymUi': 1,
-  'snfa': 1
+  'snfa': 1,
+  'gymMngSys': 1,
+  'graphics': 1
 };
 
 // Function to move to next/previous slide
@@ -44,10 +46,12 @@ showSlides(slideIndexes['tuiter'], 'tuiter');
 showSlides(slideIndexes['java'], 'java');
 showSlides(slideIndexes['gymUi'], 'gymUi');
 showSlides(slideIndexes['snfa'], 'snfa');
+showSlides(slideIndexes['gymMngSys'], 'gymMngSys');
+showSlides(slideIndexes['graphics'], 'graphics');
 
 // Add click events to dots
 document.addEventListener("DOMContentLoaded", function() {
-  const projects = ['tuiter', 'java', 'gymUi', 'snfa'];
+  const projects = ['tuiter', 'java', 'gymUi', 'snfa', 'gymMngSys', 'graphics'];
   
   projects.forEach(project => {
     const dots = document.querySelectorAll(`.${project}-dot`);
