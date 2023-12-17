@@ -1196,7 +1196,9 @@ footer p {
 }
 
 #soundCloud {
-   display: block;
+    position: relative;
+    height: 80vh;
+    display: block;
 }
 
 /* musicbox */
@@ -1508,7 +1510,7 @@ footer p {
 .aiMusicApp-dot.active {
     background-color: #717171;
 }
-
+.aiMusicApp-prev-prev:hover
 .aiMusicApp-slides img {
     width: 600px;
     height: 400px;
