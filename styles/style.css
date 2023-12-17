@@ -597,7 +597,7 @@ section {
 .gymUi-mySlides,
 .snfa-mySlides,
 .gymMngSys-mySlides,
-.graphics-mySlides {
+.graphics-mySlides{
     border-radius: 2rem;
     display: none;
     width: 100%;
@@ -609,7 +609,7 @@ section {
 .gymUi-dots,
 .snfa-dots,
 .gymMngSys-dots,
-.graphics-dots {
+.graphics-dots{
     margin-top: -20px;
 }
 
@@ -1446,4 +1446,73 @@ footer p {
 
 .sonicpi-icons {
     width: 60px;
+}
+
+/* AI Music Generative App Project */
+.aiMusicApp-prev,
+.aiMusicApp-next {
+    position: absolute;
+    top: calc(100% + 20px); /* 使箭头出现在图片下方，20px 为图片和箭头之间的距离 */
+    z-index: 1;
+    cursor: pointer;
+    background-color: lightgray;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+}
+
+.aiMusicApp-prev-slides {
+    position: relative;
+}
+
+.aiMusicApp-prev-prev:hover,
+.aiMusicApp-prev-next:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+.aiMusicApp-prev {
+    left: 20px; /* 可以根据需要调整 */
+}
+
+.aiMusicApp-next {
+    right: 20px; /* 可以根据需要调整 */
+}
+
+/* aiMusicApp Button Dots */
+.aiMusicApp-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* aiMusicApp Dots */
+.aiMusicApp-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.aiMusicApp-dot:hover {
+    background-color: #717171;
+}
+
+.aiMusicApp-dot.active {
+    background-color: #717171;
+}
+
+.aiMusicApp-slides img {
+    width: 600px;
+    height: 400px;
+    border-radius: 2rem;
+    display: none;
+
 }

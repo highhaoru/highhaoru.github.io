@@ -64,16 +64,57 @@
 
 	<a href="../pages/sonicPi.html" id="rightArrow" class="slides-arrow">&#8594;</a>
 	
-    <section id="music sonicpi">
+	<!-- AI Music Generative App -->
+    <section id="music aiMusicApp">
         <!-- <p class="section__text__p1">One of My</p> -->
         <h1 class="title">AI Music Generative App</h1>
-        <div class="wormhole-container">
-            <!-- <a class="wormhole-link" href="./pages/music.html">
-                <img class="wormhole" src="./assets/blackhole.gif" alt="wormhole">
-            </a> -->
-            <iframe class="wormhole-link" src="https://www.youtube.com/embed/7nwavQToRBQ?si=ZP7p3WVzc0iAH1NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <!-- <iframe class="wormhole-link" src="https://www.youtube.com/embed/lYKU-SBAaqI?si=ZvXvNI3i0UewrJ88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-        </div>
+       <div class="honor-text-container">
+            <div class="img-container honor-details-container color-container">
+				<div class="article-container manual-slideshow-container aiMusicApp-slides">
+					<img
+							class="honor-img aiMusicApp-mySlides"
+							src="../assets/aiMusicApp.png"
+							alt="Working Project 1 Home Page"
+							onclick="window.open(this.src, '_blank')"
+					/>
+					<img
+							class="honor-img aiMusicApp-mySlides"
+							src="../assets/aiMusicApp2.png"
+							alt="Working Project 1 Personal Training Page"
+							onclick="window.open(this.src, '_blank')"
+					/>
+					<img
+							class="honor-img aiMusicApp-mySlides"
+							src="../assets/aiMusicApp3.png"
+							alt="Working Project 1 Home Page"
+							onclick="window.open(this.src, '_blank')"
+					/>
+					<img
+							class="honor-img aiMusicApp-mySlides"
+							src="../assets/aiMusicApp4.png"
+							alt="Working Project 1 Personal Training Page"
+							onclick="window.open(this.src, '_blank')"
+					/>
+					<img
+							class="honor-img aiMusicApp-mySlides"
+							src="../assets/aiMusicApp5.png"
+							alt="Working Project 1 Personal Training Page"
+							onclick="window.open(this.src, '_blank')"
+					/>
+					<br><br>
+					<button class="aiMusicApp-prev" onclick="plusSlides(-1, 'aiMusicApp')">❮</button>
+					<button class="aiMusicApp-next" onclick="plusSlides(1, 'aiMusicApp')">❯</button>
+	
+					<div class="aiMusicApp-dots">
+						<span class="aiMusicApp-dot" data-slide-to="1"></span>
+						<span class="aiMusicApp-dot" data-slide-to="2"></span>
+						<span class="aiMusicApp-dot" data-slide-to="3"></span>
+						<span class="aiMusicApp-dot" data-slide-to="4"></span>
+						<span class="aiMusicApp-dot" data-slide-to="5"></span>
+					</div>
+				</div>
+            </div>
+		</div>
         <br>
         <button
             class="btn btn-color-2 project-btn live-demo-btn"
@@ -82,40 +123,39 @@
             More Projects
         </button>
     </section>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br>
 	<section id="instruction">
 		<div class="project-text-container">
 			<h1 class="title">Project Description</h1>
 			<h5>Project Overview:</h5>
-			<p>Build a Generative Music Box" is an engaging web application development project centered around the creation of generative, ambient music. 
-				This project offers a distinctive fusion of audio and visual programming, 
-				providing users with a singular experience in generating music through interactions with the canvas.
+			<p>
+				An innovative web application that uses deep learning to create Beethoven-style music compositions. Developed on Google Colab and powered by a Flask server, it brings AI-driven music generation to your fingertips.
 			</p>
-
-				<br><br>
-
+			
+			<br><br>
+			
 			<h5>Core Technical Aspects:</h5>
 			<ul>
-				<li class="technics">Mouse Click Handling</li>
-				<p>Facilitates interactive music generation with mouse clicks.</p>
+				<li class="technics">Deep Learning Model</li>
+				<p>Utilizes a TensorFlow LSTM network, trained on classical compositions, for generating sophisticated music pieces.</p>
 				<br>
-				<li class="technics">Canvas Utilization</li>
-				<p>Employs HTML5 canvas for dynamic graphics.</p>
+				<li class="technics">Interactive Web Interface</li>
+				<p>Incorporates a user-friendly Flask-based web interface, enabling users to engage with and guide the music creation.</p>
 				<br>
-				<li class="technics">Web Audio API</li>
-				<p>Harnesses Web Audio API for advanced audio creation.</p>
+				<li class="technics">Real-Time Music Synthesis</li>
+				<p>Features real-time synthesis and visualization of AI-generated music, showcasing the fusion of art and technology.</p>
 			</ul>
 			<button
 					class="btn btn-color-2 project-btn"
-					onclick="location.href='https://github.com/highhaoru/tuiter-react-web-app/tree/a9'"
+					onclick="location.href='https://github.com/highhaoru/ai_music_generative_app'"
 			>
 				<!-- <img class="project-icon" alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> -->
 				<div class="btn-icons">
 					<span class="fa fa-github"></span>
-					<img class="project-icon" alt="intellij"
+					<!-- <img class="project-icon" alt="intellij"
 							src="../assets/IntelliJ_IDEA_Icon.svg"/>
 					<img class="project-icon" alt="JavaScript"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/> -->
 				</div>
 
 			</button>
@@ -141,18 +181,26 @@
 			<div class="about-containers">
 	
 				<div class="details-container language">
-					<h2 class="skills-sub-title">Language</h2>
+					<h2 class="skills-sub-title">Language & Model</h2>
 					<div class="article-container">
 	
 						<article>
-							<img alt="JavaScript"
-								 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-							<div>
-								<h3>JavaScript</h3>
+							<img alt="Python"
+                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+                        <div>
+								<h3>Python</h3>
 								<p>Experienced</p>
 							</div>
 						</article>
 	
+						<article>
+							<img alt="LSTM"
+                             src="https://www.kaggle.com/static/images/site-logo.svg"/>
+                        <div>
+								<h3>Kaggle LSTM</h3>
+								<p>Medium</p>
+							</div>
+						</article>
 					   
 						<article>
 							<img alt="HTML"
@@ -162,6 +210,16 @@
 								<p>Experienced</p>
 							</div>
 						</article>
+
+						<article>
+							<img alt="JavaScript"
+								 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+							<div>
+								<h3>JavaScript</h3>
+								<p>Experienced</p>
+							</div>
+						</article>
+
 						<article>
 							
 							<img alt="css"
@@ -171,21 +229,22 @@
 								<p>Experienced</p>
 							</div>
 						</article>
-					 
 					</div>
 				</div>
 	
 				<div class="details-container library">
 					<h2 class="skills-sub-title">Platform & IDE</h2>
 					<div class="article-container">
+
 						<article>
-							<img class="ide-icons" alt="intellij" width="30px"
-								 src="../assets/IntelliJ_IDEA_Icon.svg"/>
+							<img class="ide-icons" alt="VScode"
+                             	src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
 							<div>
-								<h3>Intellij <br><span>IDEA</span></h3>
+								<h3>VS Code</h3>
 								<p>Experienced</p>
 							</div>
 						</article>
+
 						<article>
 							<img alt="github" width="30px"
 								 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
@@ -195,6 +254,14 @@
 							</div>
 						</article>
 					   
+						<article>
+							<img alt="colab" width="30px"
+								 src="../assets/google_colab.svg"/>
+							<div class="software-detail-container">
+								<h3>Github</h3>
+								<p>Experienced</p>
+							</div>
+						</article>
 					</div>
 				</div>
 	
@@ -220,5 +287,6 @@
 	<!-- <script src="../functions/slideshow.js"></script> -->
 	<!--<script src="./functions/portal.js"></script>-->
 	<script src="../functions/houdiniSetup.js"></script>
+	<script src="../functions/aiMusicApp.js"></script>
 </body>
 </html>
